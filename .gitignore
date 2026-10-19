@@ -3,10 +3,21 @@
 /data_collection/data/tv_inventories/
 /data_collection/data/tv_transcripts/
 /data_collection/data/tv_subtitles/
+# Rebuildable full-source cleaning cache and originals from bounded repairs.
+/data/cleaned/source_mentions*
+/data/cleaned/supplemental_sources/
+/data/cleaned/supplemental.sqlite*
 
 # Local course materials, dependency installations and execution caches.
 /analysis/sources/
 /analysis/deps/
+/analysis/models/
+/data/cleaned/entity_predictions.sqlite*
+# Rebuildable static posterior caches and temporary layout previews.
+/output/joint_forecast/cache/
+/output/joint_forecast/preview/
+/output/presentation_build/
+/.chart-data-*/
 /analysis/jupyter/
 __pycache__/
 *.py[cod]

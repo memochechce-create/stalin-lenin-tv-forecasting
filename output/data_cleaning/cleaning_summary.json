@@ -1,0 +1,48 @@
+{
+  "rule_version": "context-rules-2",
+  "sources_verified": 114829,
+  "candidates": 20141,
+  "labels": {
+    "person_likely": 17490,
+    "uncertain_asr": 473,
+    "uncertain_reference": 952,
+    "named_object": 1208,
+    "other_person": 18
+  },
+  "nonduplicate_labels": {
+    "person_likely": 17392,
+    "uncertain_asr": 466,
+    "uncertain_reference": 942,
+    "named_object": 1199,
+    "other_person": 18
+  },
+  "overlap_duplicates": 124,
+  "overlapping_candidate_pairs_checked": 1117,
+  "context_overrides_applied": 2,
+  "days": 5484,
+  "observed_days": 5334,
+  "coverage": {
+    "invalid_timestamp_records": [],
+    "same_start_groups": 10,
+    "same_start_extra_records": 10,
+    "overlapping_canonical_records": 83952,
+    "quality_flags": {
+      "overlapping_archive_record": 83952,
+      "short_asr": 10,
+      "long_low_word_asr": 5
+    },
+    "unit": "archive_record_by_MSK_start_day",
+    "day_timezone": "UTC+03:00",
+    "overlap_policy": "flag_only_no_cue_or_mention_deduplication",
+    "observed_scope": "all_canonical_listed_transcripts_available_with_conservative_quality_checks"
+  },
+  "semantics": "Rule-based provisional likely-person estimate and broader possible-person sensitivity; neither is a validated bound on truth.",
+  "units": "canonical archive records grouped by MSK broadcast start; surname occurrences, not all aliases",
+  "source_cache_sha256": "8c1069c64967e75c391bc8c2d3f35a6b4938d31df11a953c9871ab78b1ffccaf",
+  "code_sha256": {
+    "clean_tv_data.py": "b4d4f7323702327c5eeeb5f0519fa66ca6034ab1772353c8e9793b8f9bb23513",
+    "mention_rules.py": "c6e8c0459fcd550dab9ee38d0642a2d596eaeaec3bc717c043c22796470f4c51",
+    "tv_coverage.py": "3d2a27792987f58d385aea59c26aa0d7d4c53831277a67f5d6b7b9d57e07d473",
+    "source_database.py": "c0eea162d2ceb9cc438ae4eac6ed23e19803d7854f59921b5f65832f12fb41c9"
+  }
+}

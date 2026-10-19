@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "errors": [],
+  "error_count": 0,
+  "rows": 5484,
+  "labels": 20141,
+  "broadcast_records": 114901,
+  "interpretation": "Structural/data consistency only; does not establish semantic classifier accuracy",
+  "outputs_sha256": {
+    "mention_labels.jsonl.gz": "f318c6ab54be162704bfc6452dd2b7b54d39b09e9a763089d9c89ba1af49efbe",
+    "broadcast_coverage.jsonl.gz": "e1a8acea74dbeda5ba5a73b0d274f1549e17a80655baa4590e5d12094b74ed7b",
+    "tv_daily_targets.csv.gz": "bb18df725a91029b0116ca750b5e8398ad89c3d3d61f3e5ef32661b31cc04b63"
+  }
+}

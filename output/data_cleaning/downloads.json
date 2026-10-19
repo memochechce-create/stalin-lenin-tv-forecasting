@@ -1,0 +1,1332 @@
+{
+  "scope": {
+    "inventory404": 110,
+    "initial_boundary_inventories": 4,
+    "transcript404": 79,
+    "msk_start": "2023-01-01",
+    "msk_end": "2026-10-02",
+    "workers": 8
+  },
+  "inventory_results": [
+    {
+      "channel": "1TV",
+      "day": "20221231",
+      "status": "200",
+      "shows": 5,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20230729",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20230730",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20230731",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20230801",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20230802",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20230803",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20230804",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20230805",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20230806",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20230807",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20230808",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20230809",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20230810",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20230811",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20230812",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20230813",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20231119",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20241011",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20241012",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20241013",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20241014",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20241015",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20241016",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20241017",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20241018",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20241019",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20241020",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20241021",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20241023",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20251107",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20251108",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20251109",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "1TV",
+      "day": "20251110",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "NTV",
+      "day": "20221231",
+      "status": "200",
+      "shows": 7,
+      "selected": 0
+    },
+    {
+      "channel": "NTV",
+      "day": "20241011",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "NTV",
+      "day": "20241012",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "NTV",
+      "day": "20241013",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "NTV",
+      "day": "20241014",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "NTV",
+      "day": "20241015",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "NTV",
+      "day": "20241016",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "NTV",
+      "day": "20241017",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "NTV",
+      "day": "20241018",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "NTV",
+      "day": "20241019",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "NTV",
+      "day": "20241020",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "NTV",
+      "day": "20260618",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "NTV",
+      "day": "20260619",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "NTV",
+      "day": "20260620",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "NTV",
+      "day": "20260621",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "NTV",
+      "day": "20260622",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "NTV",
+      "day": "20260623",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "NTV",
+      "day": "20260624",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "NTV",
+      "day": "20260625",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20221231",
+      "status": "200",
+      "shows": 4,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20230218",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20230219",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20230220",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20230221",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20230222",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20230223",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20230224",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20230225",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20230226",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20230227",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20230228",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20230301",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20230811",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20230812",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20230813",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20230814",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20230815",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20230816",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20230817",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20230901",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20241011",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20241012",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20241013",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20241014",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20241015",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20241016",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20241017",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20241018",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20241019",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20241020",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20241021",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20241023",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20251007",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20251107",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20251108",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20251109",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20251110",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA1",
+      "day": "20260323",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA24",
+      "day": "20221231",
+      "status": "200",
+      "shows": 46,
+      "selected": 6
+    },
+    {
+      "channel": "RUSSIA24",
+      "day": "20230810",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA24",
+      "day": "20230811",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA24",
+      "day": "20230812",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA24",
+      "day": "20230813",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA24",
+      "day": "20230814",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA24",
+      "day": "20230815",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA24",
+      "day": "20241011",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA24",
+      "day": "20241012",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA24",
+      "day": "20241013",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA24",
+      "day": "20241014",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA24",
+      "day": "20241015",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA24",
+      "day": "20241016",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA24",
+      "day": "20241017",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA24",
+      "day": "20241018",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA24",
+      "day": "20241019",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA24",
+      "day": "20241020",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA24",
+      "day": "20241021",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA24",
+      "day": "20241023",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA24",
+      "day": "20251007",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA24",
+      "day": "20260821",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    },
+    {
+      "channel": "RUSSIA24",
+      "day": "20260822",
+      "status": "404",
+      "shows": 0,
+      "selected": 0
+    }
+  ],
+  "transcript_results": [
+    {
+      "id": "NTV_20230414_230000_Zakhar_Prilepin",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "NTV_20230414_232500_Kvartirnii_vopros",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_000000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_003000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_010000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_013000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_020000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_023000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_030000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_033000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_040000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_043000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_050000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_060000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_080000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_063000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_053000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_073000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_070000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_090000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_083000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_093000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_103000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_110000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_100000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_113000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_123000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_120000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_130000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_150000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_140000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_143000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_163000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_153000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_170000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_173000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_133000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_160000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_183000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_180000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_200000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_210000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_203000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_213000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_220000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_223000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_193000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_230000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_233000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20240626_190000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "NTV_20241021_233500_Balabol-2",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "NTV_20241023_233500_Balabol-2",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA1_20250106_022100_Pereriv_v_veshchanii",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA1_20250106_033500_Master_i_Margarita",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA1_20250106_052500_Likvidatsiya",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA1_20250106_071000_Sto_k_odnomu",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA1_20250106_080000_Vesti",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA1_20250106_083000_Ironiya_sudbi_ili_S_lyogkim_parom",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA1_20250106_120000_Vesti",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA1_20250106_123000_Vesti",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA1_20250106_125000_Neposlushnik",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA1_20250106_150000_Neposlushnik-2",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA1_20250106_170000_Vesti",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA1_20250106_174500_Vesti",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA1_20250106_175500_Neposlushniki",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA1_20250106_200000_Rozhdestvo_Khristovo",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA1_20250106_221500_Otets_Ioann",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA1_20250106_231000_Serebryanie_konki",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA1_20251008_231000_Taini_sledstviya-21",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA1_20260321_175000_Vesti",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20260420_013000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20260420_030000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20260420_040000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20260420_053000_RIK_Rossiya_24",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA1_20260425_015800_Pereriv_v_veshchanii",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "1TV_20260512_110000_Bolshaya_igra",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "1TV_20260808_010000",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20260909_034500_Ekonomika",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20260910_143000_Vesti._Dezhurnaya_chast",
+      "status": "404",
+      "source_format": "srt",
+      "kind": "retry404"
+    },
+    {
+      "id": "RUSSIA24_20221231_210000",
+      "status": "200",
+      "source_format": "txt",
+      "kind": "new"
+    },
+    {
+      "id": "RUSSIA24_20221231_213000",
+      "status": "200",
+      "source_format": "txt",
+      "kind": "new"
+    },
+    {
+      "id": "RUSSIA24_20221231_220000",
+      "status": "200",
+      "source_format": "txt",
+      "kind": "new"
+    },
+    {
+      "id": "RUSSIA24_20221231_223000",
+      "status": "200",
+      "source_format": "txt",
+      "kind": "new"
+    },
+    {
+      "id": "RUSSIA24_20221231_230000_RIK_Rossiya_24",
+      "status": "200",
+      "source_format": "txt",
+      "kind": "new"
+    },
+    {
+      "id": "RUSSIA24_20221231_233000_RIK_Rossiya_24",
+      "status": "200",
+      "source_format": "txt",
+      "kind": "new"
+    }
+  ],
+  "totals": {
+    "inventory_attempts": 114,
+    "inventory_recovered": 0,
+    "boundary_inventory_success": 4,
+    "transcript_attempts": 85,
+    "transcript_success": 6,
+    "transcript_retry_recovered": 0,
+    "new_transcript_success": 6
+  },
+  "finished_at": "2026-10-17T19:21:22.636835+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "model": "fastino/GLiNER2.5-multi-Decide",
+  "revision": "e173bca1f0c4217d7a55b3b0c705d5ece8a0218d",
+  "schema": "target-span-meaning-v1",
+  "quantized": true,
+  "rows": 63,
+  "inference_seconds": 17.51,
+  "reference": "Primary-agent judgments on challenge-enriched real ASR snippets; not independent human gold.",
+  "development": {
+    "n": 21,
+    "accuracy": 0.0,
+    "correct": 0
+  },
+  "test": {
+    "n": 42,
+    "accuracy": 0.0238,
+    "correct": 1
+  }
+}

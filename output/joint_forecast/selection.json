@@ -1,0 +1,19 @@
+{
+  "q": 0.015,
+  "selected_model": "M3",
+  "criterion": "mean daily CRPS / max(training series mean,1)",
+  "validation_months": 6,
+  "validation_scores": {
+    "M3": 0.5459581207043673,
+    "POOL": 0.549821004095859,
+    "M4": 0.5502439108305471,
+    "M2": 0.5520488174770758,
+    "M1": 0.5832383994034898
+  },
+  "pool_weights": {
+    "M1": 0.25,
+    "M2": 0.25,
+    "M3": 0.25,
+    "M4": 0.25
+  }
+}

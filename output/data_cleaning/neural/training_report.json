@@ -1,0 +1,93 @@
+{
+  "initial_model": "cointegrated/rubert-tiny-bilingual-nli",
+  "initial_revision": "3907306f5e5d65e281a524c536883b766c89ded2",
+  "training_examples": 282,
+  "development_examples": 21,
+  "classes": [
+    "historical_person",
+    "non_target_reference",
+    "commemoration"
+  ],
+  "best_epoch": 10,
+  "annotation_source": "Primary LLM agent directly read and labelled real ASR contexts. No independent human-gold claim.",
+  "seed": 20261017,
+  "context_window": 160,
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 1.0800084087020116,
+      "development_macro_f1": 0.19999999999999998,
+      "development_accuracy": 0.42857142857142855
+    },
+    {
+      "epoch": 2,
+      "loss": 1.0382168859454757,
+      "development_macro_f1": 0.3974358974358974,
+      "development_accuracy": 0.5714285714285714
+    },
+    {
+      "epoch": 3,
+      "loss": 0.9630565059945938,
+      "development_macro_f1": 0.4830917874396135,
+      "development_accuracy": 0.6666666666666666
+    },
+    {
+      "epoch": 4,
+      "loss": 0.8505869951653988,
+      "development_macro_f1": 0.3434343434343434,
+      "development_accuracy": 0.5238095238095238
+    },
+    {
+      "epoch": 5,
+      "loss": 0.7283799593330275,
+      "development_macro_f1": 0.4830917874396135,
+      "development_accuracy": 0.6666666666666666
+    },
+    {
+      "epoch": 6,
+      "loss": 0.5658151845560007,
+      "development_macro_f1": 0.7126984126984127,
+      "development_accuracy": 0.7619047619047619
+    },
+    {
+      "epoch": 7,
+      "loss": 0.40465605322350845,
+      "development_macro_f1": 0.6683316683316683,
+      "development_accuracy": 0.7142857142857143
+    },
+    {
+      "epoch": 8,
+      "loss": 0.280254028684704,
+      "development_macro_f1": 0.6683316683316683,
+      "development_accuracy": 0.7142857142857143
+    },
+    {
+      "epoch": 9,
+      "loss": 0.17566632405451849,
+      "development_macro_f1": 0.6793650793650793,
+      "development_accuracy": 0.7142857142857143
+    },
+    {
+      "epoch": 10,
+      "loss": 0.11245782926995704,
+      "development_macro_f1": 0.7921245421245421,
+      "development_accuracy": 0.8095238095238095
+    },
+    {
+      "epoch": 11,
+      "loss": 0.07004805651645288,
+      "development_macro_f1": 0.7921245421245421,
+      "development_accuracy": 0.8095238095238095
+    },
+    {
+      "epoch": 12,
+      "loss": 0.037968725283095174,
+      "development_macro_f1": 0.7921245421245421,
+      "development_accuracy": 0.8095238095238095
+    }
+  ],
+  "elapsed_seconds": 89.66,
+  "training_data_sha256": "0fdc528e49f4f4dbfc546a7f24e8940d50dc5d5f5b225d8f37eb55e402d02701",
+  "evaluation_data_sha256": "0383d2aae9264f327b66fa369d3056b888f7d218efb12f5caceed75a4d06f055",
+  "model_sha256": "faf932bc11846ea0c49052db72958caf38cc80d85855481f73f8a0b2e4447cff"
+}

@@ -1,68 +1,60 @@
-# Stalin and Lenin mentions on Russian television
+# Lenin and Stalin on Russian television: daily probabilistic forecasts
 
-Course forecasting project by **Купча Софья and Пальцева Ксения**.
+Course project by **Купча Софья and Пальцева Ксения**. Two people, four channels, two targets: surname mentions and archive records with at least one mention.
 
-We plan to forecast two daily quantities for Stalin and Lenin, separately for Channel One, NTV, Russia 1 and Russia 24:
+## Results and report
 
-- The number of surname occurrences across all archived broadcasts.
-- The number of broadcasts containing at least one surname occurrence.
+- Five-slide presentation: [PowerPoint](output/presentation/lenin_stalin_forecast.pptx) and [PDF](output/presentation/lenin_stalin_forecast.pdf), with speaker notes timed for an eight-minute talk.
 
-The forecast horizon is one month after the latest available date. The current dataset ends on **October 2, 2026**; the forecast runs from **October 3 to November 2, 2026**, inclusive.
+- [Visual forecast report](output/joint_forecast/forecast_report.html): self-contained HTML, minimal SVG charts, daily and monthly forecasts, historical evaluation and sensitivity.
+- [Final project notebook](output/joint_forecast/final_project.ipynb): explained calculations, model equations, temporal validation, diagnostics and course-method mapping.
+- [Methodology, reproduction and file guide](output/joint_forecast/README.md).
+- [Daily predictions](output/joint_forecast/forecast_daily.csv), [monthly predictions](output/joint_forecast/forecast_month.csv), [evaluation by series](output/joint_forecast/evaluation_by_series.csv).
+- [Original proposal](output/proposal/forecasting_proposal.pdf) and [editable source](output/proposal/forecasting_proposal.tex).
 
-## Start here
+The information cutoff is **2 October 2026**. The proposed 31-day forecast runs **3 October–2 November 2026**. This is a frozen-cutoff retrospective forecast; no observations after the cutoff enter fitting or selection.
 
-- [Project proposal (PDF)](output/proposal/forecasting_proposal.pdf) and [editable LaTeX source](output/proposal/forecasting_proposal.tex).
-- [Executed daily forecasting notebook](output/stalin_russia1/stalin_russia1_daily_forecast.ipynb): four models, historical evaluation and ten figures.
-- [Detailed methodology and pilot results](output/stalin_russia1/README.md).
-- [Daily forecasts from all four models](output/stalin_russia1/forecast_daily_all_models.csv).
-- [Daily targets for both people and all four channels](data/tv_daily_targets.csv.gz), including broadcasts with mentions.
-- [Exploratory data notebook](data_collection/notebooks/mentions_over_time.ipynb).
+## Reproduce from the terminal
 
-**The completed forecasting experiment currently covers Stalin on Russia 1.** Forecasting Lenin, the remaining channels and broadcasts with mentions is planned work. The prepared daily target table covers those series; it is not a set of completed forecasts.
+Use Python 3.12/3.13 from the repository root:
 
-## Data
+```powershell
+python -m pip install -r requirements-forecast.txt
+python analysis/run_joint_forecast.py --jobs 3
+python analysis/execute_forecast_notebook.py
+python -m unittest discover -s tests -v
+```
 
-The saved dataset comes from [GDELT](https://gdeltproject.org/), including its [television archive files](https://storage.googleapis.com/data.gdeltproject.org/gdeltv3/iatv/visualexplorer/). It covers January 1, 2023 through October 2, 2026 (Europe/Moscow).
-
-The repository includes compressed exports of broadcast metadata and candidate counts, daily coverage, mention contexts and cached exploratory tables. These files are sufficient to reproduce the current count-based forecasting experiment without Google Cloud credentials.
-
-`data/tv_daily_targets.csv.gz` has one row per channel and calendar day. `stalin_mentions` and `lenin_mentions` count matched surname tokens; `stalin_broadcasts` and `lenin_broadcasts` count available broadcasts with at least one match. The latter counts are bounded by `available_broadcasts`. All four target columns are blank on days without a complete inventory and all listed transcripts. Such days are missing observations, not zero counts.
-
-Automatic transcript matches are candidates, not fully verified references to the historical individuals. The archive does not establish complete coverage of the entire television schedule. These limitations are documented in the pilot report.
-
-Full original transcripts, inventories, the SQLite database, lecture extracts and cloud UI screenshots are retained in the local project folder but excluded from Git. Their total size is about 2.3 GB; the SQLite file alone exceeds GitHub's ordinary 100 MB file limit. Collection scripts and compressed exports remain in the repository.
+The workflow fits all models, performs chronological backtesting, produces joint predictive trajectories, validates the results and builds the figures, HTML and notebook. `--jobs 1` runs sequentially. `--rebuild` ignores fitted-posterior caches. The full computation takes time on CPU; valid cached fits are reused automatically. No API credentials or network are needed for forecasting.
 
 ## Models and evaluation
 
-The preliminary experiment compares:
+All forecasts respect **N → B|N → C=B+E|B**: total archive records, records with a mention, then additional mentions in those records. Future N is forecast rather than observed. N is shared by both people; every simulated path satisfies 0≤B≤N, B≤C and B=0⇒C=0.
 
-1. A constant-rate Gamma-Poisson baseline.
-2. A constant-mean negative-binomial model with additional dispersion.
-3. A negative-binomial regression with a time trend and partially pooled month and weekday effects.
-4. Model 3 with a latent level following a random walk, estimated by a modular particle filter.
+1. M1: conjugate constant-rate Poisson/Binomial baseline.
+2. M2: negative-binomial and beta-binomial overdispersion, exact static-posterior Metropolis–Hastings.
+3. M3: M2 with trend, partially pooled channel/calendar effects and explicit special-date indicators.
+4. M4: M3 with random-walk levels and conditional particle filters; an explicitly modular/cut approximation.
+5. An equal-weight linear pool of complete trajectories, following the forecast-aggregation lecture.
 
-The fourth model uses a conditional/modular approximation, not a full joint Bayesian posterior for static parameters and latent states. Historical evaluation uses multiple expanding-window forecast origins. The report gives RMSE, CRPS, interval coverage and model comparisons; extensions do not improve every metric.
+Calendar/channel prior scales are fixed and disclosed. Four MH chains are required to pass rank-normalized split Rhat<1.01 and bulk/tail ESS≥400. The Bayesian computation is checked separately from model adequacy.
 
-## Reproduce
+Tuning and model selection use July–December 2024 only. The outer expanding-window backtest covers 21 nonoverlapping calendar months, January 2025–September 2026. Evaluation includes RMSE, CRPS, predictive coverage/width, randomized PIT, horizon-specific scores, block bootstrap uncertainty and origin-block DM tests with Holm correction. Monthly predictive intervals use sums of trajectories, never sums of daily quantiles. Missing days are excluded, not replaced by zero.
 
-Use Python 3.12 and install the recorded dependencies:
+## Data and interpretation
 
-```sh
-python -m pip install -r requirements.txt
+The model input is [the corrected daily table](data/cleaned/tv_daily_targets.csv.gz). [Data preparation and checks](output/data_cleaning/README.md) describe coverage, source verification, surname forms, contextual rules, duplicates and repairs. Rebuild it with:
+
+```powershell
+python analysis/prepare_clean_data.py
 ```
 
-Open the daily forecasting notebook and run its cells. Saved historical evaluations are reused by default; set `RUN_BACKTEST = True` to recompute them. The full model script can also be run from the repository root:
+Source: [GDELT](https://gdeltproject.org/) television transcripts and archived metadata, January 2023–October 2026. The source collection workflow is in `data_collection/`. Original transcripts/SQLite and rebuildable caches remain local and are ignored by Git. The supplied compressed daily data are sufficient to reproduce forecasting without Google Cloud access.
 
-```sh
-python analysis/stalin_models.py
-python analysis/verify_forecast.py
-python analysis/prepare_tv_targets.py
-```
+Counts include all archived programmes, advertisements and true rebroadcasts. A day is defined by the archive record's MSK start date. Contextual surname labels remain provisional; independent human precision/recall is not established. A separate expanded-context sensitivity forecast is supplied. Archive volume and ASR/text length can affect counts: the forecasts support statements about the measured archive series, not causal claims about political direction.
 
-The LaTeX proposal can be compiled with a standard TeX installation:
+The cancelled neural-disambiguation experiment is documented [here](output/data_cleaning/neural/EXPERIMENT_NOTES.md); it does not affect the active rules or forecasts.
 
-```sh
-pdflatex -output-directory=output/proposal output/proposal/forecasting_proposal.tex
-```
+## Historical pilot
 
-`data_collection/` also contains the original acquisition workflow and broader exploratory work, including web data and Trump mentions collected before this project's scope was narrowed. They are not additional forecast targets in the current proposal.
+`output/stalin_russia1/`, `analysis/stalin_models.py` and the old `requirements.txt` reproduce an earlier Stalin/Russia 1 pilot on unfiltered candidates and the former coverage definition. These files are retained for provenance. Use the new `joint_forecast` results and `requirements-forecast.txt` for the final project.

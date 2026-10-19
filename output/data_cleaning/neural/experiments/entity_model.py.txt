@@ -1,0 +1,100 @@
+"""Local multilingual decision transformer for target-span entity disambiguation.
+
+No street-word rules: pretrained weights score supplied semantic categories.
+Word matching remains only candidate extraction. Scores are uncalibrated.
+"""
+import hashlib
+import json
+import math
+import os
+import sys
+from pathlib import Path
+
+ROOT=Path(__file__).resolve().parents[1]
+MODEL_ID='fastino/GLiNER2.5-multi-Decide'
+MODEL_REVISION='e173bca1f0c4217d7a55b3b0c705d5ece8a0218d'
+MODEL_DIR=ROOT/'analysis/models/gliner-multi-decide'
+SCHEMA_VERSION='target-span-meaning-v1'
+WINDOW=200
+
+
+def decision_label(prediction,min_score,min_margin):
+    """Abstention policy on model scores; contains no context-word rules."""
+    category=prediction['category']
+    mapping={'historical_person':'person_likely','named_object':'named_object',
+             'other_person':'other_person','commemoration':'uncertain_reference',
+             'transcription_error':'uncertain_asr','unclear':'uncertain_reference'}
+    if category not in mapping: raise ValueError('Unknown neural category '+str(category))
+    if not math.isfinite(prediction['score']) or not math.isfinite(prediction['margin']):
+        raise ValueError('Non-finite model score')
+    if prediction['score']<min_score or prediction['margin']<min_margin:
+        return 'uncertain_reference','neural_low_confidence'
+    return mapping[category],'neural_'+category
+
+
+def model_text(m,window=WINDOW):
+    p=m['context_offset']; end=p+len(m['matched'])
+    if m['context'][p:end]!=m['matched']:
+        raise ValueError('Target span does not match context')
+    left=m['context'][max(0,p-window):p]
+    right=m['context'][end:end+window]
+    return ('Значение выделенного имени в расшифровке телепередачи. '
+            'Оцени только слово между [TARGET] и [/TARGET].\n'
+            +left+'[TARGET]'+m['matched']+'[/TARGET]'+right)
+
+
+def task_schema(person):
+    name={'lenin':'Владимир Ленин','stalin':'Иосиф Сталин'}[person]
+    labels={
+        'historical_person':f'{name} как человек: биография, политика, слова, действия, оценки.',
+        'named_object':'Название улицы, площади, города, станции, учреждения или судна.',
+        'commemoration':'Памятник, бюст, портрет, мавзолей, орден или награда в честь человека.',
+        'other_person':f'Другой человек с таким именем или фамилией, не {name}.',
+        'transcription_error':'Ошибка распознавания речи: имя появилось вместо другого слова.',
+        'unclear':'Фрагмент повреждён или недостаточно контекста для определения значения.'}
+    return {'meaning':{'labels':labels,'multi_label':True,'class_act':'softmax','cls_threshold':0.0}}
+
+
+def input_key(m):
+    payload=[MODEL_ID,MODEL_REVISION,SCHEMA_VERSION,task_schema(m['person']),model_text(m)]
+    return hashlib.sha256(json.dumps(payload,ensure_ascii=False,separators=(',',':')).encode()).hexdigest()
+
+
+class EntityModel:
+    def __init__(self,threads=4,quantize=True):
+        deps=ROOT/'analysis/deps/entity_model'
+        if deps.exists(): sys.path.insert(0,str(deps))
+        os.environ['HF_HUB_OFFLINE']='1'
+        os.environ['TRANSFORMERS_OFFLINE']='1'
+        os.environ['TOKENIZERS_PARALLELISM']='false'
+        import torch
+        from gliner2 import AutoExtractor
+        torch.set_num_threads(threads)
+        torch.manual_seed(20261017)
+        self.torch=torch
+        self.model=AutoExtractor.from_pretrained(str(MODEL_DIR),map_location='cpu',quantize=False)
+        self.model.eval()
+        if quantize:
+            # GLiNER's quantize=True means fp16, which is unsuitable here on CPU.
+            # Dynamic int8 applies to Linear weights; embeddings remain float32.
+            self.model=torch.ao.quantization.quantize_dynamic(self.model,{torch.nn.Linear},dtype=torch.qint8,inplace=True)
+        self.quantize=quantize
+
+    def predict(self,mentions,batch_size=4):
+        output=[None]*len(mentions)
+        for person in ('lenin','stalin'):
+            indices=[i for i,m in enumerate(mentions) if m['person']==person]
+            if not indices: continue
+            texts=[model_text(mentions[i]) for i in indices]
+            with self.torch.inference_mode():
+                predictions=self.model.batch_classify_text(texts,task_schema(person),
+                    batch_size=batch_size,include_confidence=True,max_len=768)
+            for i,p in zip(indices,predictions):
+                values=sorted(p['meaning'],key=lambda v:v['confidence'],reverse=True)
+                best=values[0]
+                output[i]={'category':best['label'],'score':float(best['confidence']),
+                           'margin':float(best['confidence']-values[1]['confidence']),
+                           'scores':{v['label']:float(v['confidence']) for v in values},
+                           'input_key':input_key(mentions[i])}
+        if any(p is None for p in output): raise RuntimeError('Incomplete model output')
+        return output

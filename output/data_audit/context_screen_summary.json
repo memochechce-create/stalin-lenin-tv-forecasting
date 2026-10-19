@@ -1,0 +1,200 @@
+{
+  "note": "Rule-based screening, not human-labelled false positives. Categories require a research definition.",
+  "rows": 5484,
+  "observed": 5353,
+  "aggregation_mismatches": [],
+  "categories": [
+    {
+      "category": "address_or_station_phrase",
+      "person": "stalin",
+      "channel": "1TV",
+      "tokens": 0,
+      "broadcasts": 0,
+      "broadcasts_all_matches_flagged": 0
+    },
+    {
+      "category": "address_or_station_phrase",
+      "person": "stalin",
+      "channel": "NTV",
+      "tokens": 1,
+      "broadcasts": 1,
+      "broadcasts_all_matches_flagged": 0
+    },
+    {
+      "category": "address_or_station_phrase",
+      "person": "stalin",
+      "channel": "RUSSIA1",
+      "tokens": 0,
+      "broadcasts": 0,
+      "broadcasts_all_matches_flagged": 0
+    },
+    {
+      "category": "address_or_station_phrase",
+      "person": "stalin",
+      "channel": "RUSSIA24",
+      "tokens": 3,
+      "broadcasts": 3,
+      "broadcasts_all_matches_flagged": 2
+    },
+    {
+      "category": "address_or_station_phrase",
+      "person": "lenin",
+      "channel": "1TV",
+      "tokens": 77,
+      "broadcasts": 65,
+      "broadcasts_all_matches_flagged": 51
+    },
+    {
+      "category": "address_or_station_phrase",
+      "person": "lenin",
+      "channel": "NTV",
+      "tokens": 63,
+      "broadcasts": 61,
+      "broadcasts_all_matches_flagged": 50
+    },
+    {
+      "category": "address_or_station_phrase",
+      "person": "lenin",
+      "channel": "RUSSIA1",
+      "tokens": 110,
+      "broadcasts": 87,
+      "broadcasts_all_matches_flagged": 74
+    },
+    {
+      "category": "address_or_station_phrase",
+      "person": "lenin",
+      "channel": "RUSSIA24",
+      "tokens": 309,
+      "broadcasts": 245,
+      "broadcasts_all_matches_flagged": 213
+    },
+    {
+      "category": "ambiguous_commemoration_or_possession",
+      "person": "stalin",
+      "channel": "1TV",
+      "tokens": 2,
+      "broadcasts": 1,
+      "broadcasts_all_matches_flagged": 0
+    },
+    {
+      "category": "ambiguous_commemoration_or_possession",
+      "person": "stalin",
+      "channel": "NTV",
+      "tokens": 21,
+      "broadcasts": 13,
+      "broadcasts_all_matches_flagged": 2
+    },
+    {
+      "category": "ambiguous_commemoration_or_possession",
+      "person": "stalin",
+      "channel": "RUSSIA1",
+      "tokens": 5,
+      "broadcasts": 5,
+      "broadcasts_all_matches_flagged": 0
+    },
+    {
+      "category": "ambiguous_commemoration_or_possession",
+      "person": "stalin",
+      "channel": "RUSSIA24",
+      "tokens": 24,
+      "broadcasts": 20,
+      "broadcasts_all_matches_flagged": 14
+    },
+    {
+      "category": "ambiguous_commemoration_or_possession",
+      "person": "lenin",
+      "channel": "1TV",
+      "tokens": 152,
+      "broadcasts": 117,
+      "broadcasts_all_matches_flagged": 82
+    },
+    {
+      "category": "ambiguous_commemoration_or_possession",
+      "person": "lenin",
+      "channel": "NTV",
+      "tokens": 64,
+      "broadcasts": 51,
+      "broadcasts_all_matches_flagged": 26
+    },
+    {
+      "category": "ambiguous_commemoration_or_possession",
+      "person": "lenin",
+      "channel": "RUSSIA1",
+      "tokens": 142,
+      "broadcasts": 120,
+      "broadcasts_all_matches_flagged": 91
+    },
+    {
+      "category": "ambiguous_commemoration_or_possession",
+      "person": "lenin",
+      "channel": "RUSSIA24",
+      "tokens": 299,
+      "broadcasts": 250,
+      "broadcasts_all_matches_flagged": 179
+    },
+    {
+      "category": "ship_name_phrase",
+      "person": "stalin",
+      "channel": "1TV",
+      "tokens": 0,
+      "broadcasts": 0,
+      "broadcasts_all_matches_flagged": 0
+    },
+    {
+      "category": "ship_name_phrase",
+      "person": "stalin",
+      "channel": "NTV",
+      "tokens": 0,
+      "broadcasts": 0,
+      "broadcasts_all_matches_flagged": 0
+    },
+    {
+      "category": "ship_name_phrase",
+      "person": "stalin",
+      "channel": "RUSSIA1",
+      "tokens": 2,
+      "broadcasts": 2,
+      "broadcasts_all_matches_flagged": 1
+    },
+    {
+      "category": "ship_name_phrase",
+      "person": "stalin",
+      "channel": "RUSSIA24",
+      "tokens": 0,
+      "broadcasts": 0,
+      "broadcasts_all_matches_flagged": 0
+    },
+    {
+      "category": "ship_name_phrase",
+      "person": "lenin",
+      "channel": "1TV",
+      "tokens": 21,
+      "broadcasts": 19,
+      "broadcasts_all_matches_flagged": 9
+    },
+    {
+      "category": "ship_name_phrase",
+      "person": "lenin",
+      "channel": "NTV",
+      "tokens": 23,
+      "broadcasts": 18,
+      "broadcasts_all_matches_flagged": 15
+    },
+    {
+      "category": "ship_name_phrase",
+      "person": "lenin",
+      "channel": "RUSSIA1",
+      "tokens": 60,
+      "broadcasts": 37,
+      "broadcasts_all_matches_flagged": 21
+    },
+    {
+      "category": "ship_name_phrase",
+      "person": "lenin",
+      "channel": "RUSSIA24",
+      "tokens": 47,
+      "broadcasts": 42,
+      "broadcasts_all_matches_flagged": 32
+    }
+  ]
+}

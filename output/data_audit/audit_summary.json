@@ -1,0 +1,52 @@
+{
+  "audited_at": "2026-10-17T18:50:44.514394+00:00",
+  "errors": [],
+  "scope": "Saved TV archive; checks do not establish complete television airtime or ASR accuracy",
+  "source_check_mode": "stratified_sample",
+  "source_sample_seed": 20261017,
+  "source_population_size": 114823,
+  "verified_files": 1000,
+  "formats": {
+    "srt": 659,
+    "txt": 341
+  },
+  "source_checked_counts": {
+    "stalin": 180,
+    "lenin": 132
+  },
+  "nearby_object_flags": {
+    "lenin": 20,
+    "stalin": 6
+  },
+  "duplicate_text_groups": 0,
+  "extra_identical_text_records": 0,
+  "exported_broadcasts": 114895,
+  "target_rows": 5484,
+  "missing_target_days": 131,
+  "channels": {
+    "1TV": {
+      "observed_days": 1335,
+      "stalin_exported_candidates": 2885,
+      "lenin_exported_candidates": 1621,
+      "missing_days": 36
+    },
+    "NTV": {
+      "observed_days": 1347,
+      "stalin_exported_candidates": 2130,
+      "lenin_exported_candidates": 1553,
+      "missing_days": 24
+    },
+    "RUSSIA1": {
+      "observed_days": 1327,
+      "stalin_exported_candidates": 2351,
+      "lenin_exported_candidates": 1682,
+      "missing_days": 44
+    },
+    "RUSSIA24": {
+      "observed_days": 1344,
+      "stalin_exported_candidates": 4666,
+      "lenin_exported_candidates": 2794,
+      "missing_days": 27
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "files": 114829,
+  "candidates": 20141,
+  "errors": [],
+  "sample": false,
+  "formats": {
+    "txt": 52332,
+    "srt": 62497
+  },
+  "nonstandard_forms": 457,
+  "files_with_invalid_timing": 455,
+  "invalid_timing_cues": 462,
+  "extractor_sha256": "569334214b446638f379ba14b936d0882a0de4f677044cfddb688cb32ee565db",
+  "elapsed_seconds": 240.56,
+  "output": "data\\cleaned\\source_mentions.jsonl.gz"
+}

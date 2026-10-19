@@ -1,4 +1,7 @@
-"""Build both daily TV targets from the saved GDELT exports, without cloud access."""
+"""Build corrected daily targets; --legacy reproduces the original raw export panel."""
+import argparse
+import subprocess
+import sys
 import csv
 import gzip
 import json
@@ -15,7 +18,7 @@ def read_jsonl(path):
             yield json.loads(line)
 
 
-def main():
+def legacy_main():
     totals = defaultdict(lambda: dict(available_broadcasts=0, stalin_mentions=0,
         lenin_mentions=0, stalin_broadcasts=0, lenin_broadcasts=0))
     seen = set()
@@ -62,4 +65,10 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--legacy', action='store_true', help='Reproduce unfiltered candidates with the historical coverage definition')
+    args = parser.parse_args()
+    if args.legacy:
+        legacy_main()
+    else:
+        subprocess.run([sys.executable, str(ROOT/'analysis/prepare_clean_data.py')], cwd=ROOT, check=True)

@@ -1,0 +1,248 @@
+{
+  "M2": {
+    "N": {
+      "max_rhat": 1.0016294131184995,
+      "min_bulk_ess": 2746.088271930385,
+      "min_tail_ess": 2457.5816673824306,
+      "component": "N",
+      "calendar": false,
+      "n": 5334,
+      "acceptance": [
+        0.869,
+        0.873,
+        0.876,
+        0.876
+      ],
+      "draws_per_chain": 1000,
+      "warmup": 250,
+      "gradient_max": 6.576374028011145e-06,
+      "optimizer_success": true,
+      "hessian_min_eigen": 86.26466643260687
+    },
+    "B_lenin": {
+      "max_rhat": 1.0024532758289215,
+      "min_bulk_ess": 2648.38225639031,
+      "min_tail_ess": 2596.6969860783715,
+      "component": "B_lenin",
+      "calendar": false,
+      "n": 5334,
+      "acceptance": [
+        0.867,
+        0.861,
+        0.885,
+        0.885
+      ],
+      "draws_per_chain": 1000,
+      "warmup": 250,
+      "gradient_max": 6.239305781849391e-05,
+      "optimizer_success": false,
+      "hessian_min_eigen": 209.27216660816404
+    },
+    "E_lenin": {
+      "max_rhat": 1.0014395923483124,
+      "min_bulk_ess": 2767.155098145313,
+      "min_tail_ess": 2362.8174279000614,
+      "component": "E_lenin",
+      "calendar": false,
+      "n": 2146,
+      "acceptance": [
+        0.841,
+        0.87,
+        0.859,
+        0.863
+      ],
+      "draws_per_chain": 1000,
+      "warmup": 250,
+      "gradient_max": 2.0693249227488053e-06,
+      "optimizer_success": true,
+      "hessian_min_eigen": 78.17389575092675
+    },
+    "B_stalin": {
+      "max_rhat": 1.0008392405862063,
+      "min_bulk_ess": 2770.901158780515,
+      "min_tail_ess": 2639.9446405267263,
+      "component": "B_stalin",
+      "calendar": false,
+      "n": 5334,
+      "acceptance": [
+        0.862,
+        0.882,
+        0.875,
+        0.88
+      ],
+      "draws_per_chain": 1000,
+      "warmup": 250,
+      "gradient_max": 1.0620037229874812e-05,
+      "optimizer_success": true,
+      "hessian_min_eigen": 303.0510518861231
+    },
+    "E_stalin": {
+      "max_rhat": 1.0013666590774786,
+      "min_bulk_ess": 2910.9880377773034,
+      "min_tail_ess": 2577.2942665887135,
+      "component": "E_stalin",
+      "calendar": false,
+      "n": 2766,
+      "acceptance": [
+        0.851,
+        0.868,
+        0.886,
+        0.873
+      ],
+      "draws_per_chain": 1000,
+      "warmup": 250,
+      "gradient_max": 1.801315178684426e-05,
+      "optimizer_success": true,
+      "hessian_min_eigen": 132.75285231389276
+    }
+  },
+  "M3": {
+    "N": {
+      "max_rhat": 1.0070076686891862,
+      "min_bulk_ess": 1116.0163423455167,
+      "min_tail_ess": 885.2180363437215,
+      "component": "N",
+      "calendar": true,
+      "n": 5334,
+      "acceptance": [
+        0.536,
+        0.532,
+        0.557,
+        0.543
+      ],
+      "draws_per_chain": 1000,
+      "warmup": 250,
+      "gradient_max": 5.946886529587664e-05,
+      "optimizer_success": false,
+      "hessian_min_eigen": 28.161713969449064
+    },
+    "B_lenin": {
+      "max_rhat": 1.0084953497222697,
+      "min_bulk_ess": 871.4456435391642,
+      "min_tail_ess": 615.8872761092779,
+      "component": "B_lenin",
+      "calendar": true,
+      "n": 5334,
+      "acceptance": [
+        0.503,
+        0.493,
+        0.517,
+        0.482
+      ],
+      "draws_per_chain": 1000,
+      "warmup": 250,
+      "gradient_max": 1.090862042095464e-05,
+      "optimizer_success": true,
+      "hessian_min_eigen": 6.606780139532818
+    },
+    "E_lenin": {
+      "max_rhat": 1.004517477335344,
+      "min_bulk_ess": 1318.104865215715,
+      "min_tail_ess": 661.8926565977195,
+      "component": "E_lenin",
+      "calendar": true,
+      "n": 2146,
+      "acceptance": [
+        0.452,
+        0.429,
+        0.436,
+        0.432
+      ],
+      "draws_per_chain": 2000,
+      "warmup": 500,
+      "gradient_max": 1.5551358510834667e-05,
+      "optimizer_success": true,
+      "hessian_min_eigen": 2.6460973173853226
+    },
+    "B_stalin": {
+      "max_rhat": 1.0089256475339727,
+      "min_bulk_ess": 861.4093033917819,
+      "min_tail_ess": 479.08764241887263,
+      "component": "B_stalin",
+      "calendar": true,
+      "n": 5334,
+      "acceptance": [
+        0.51,
+        0.455,
+        0.488,
+        0.524
+      ],
+      "draws_per_chain": 1000,
+      "warmup": 250,
+      "gradient_max": 5.570113169565483e-05,
+      "optimizer_success": false,
+      "hessian_min_eigen": 8.524751841553726
+    },
+    "E_stalin": {
+      "max_rhat": 1.0068086765625814,
+      "min_bulk_ess": 1469.2193272476252,
+      "min_tail_ess": 1001.6873989646516,
+      "component": "E_stalin",
+      "calendar": true,
+      "n": 2766,
+      "acceptance": [
+        0.45,
+        0.442,
+        0.433,
+        0.452
+      ],
+      "draws_per_chain": 2000,
+      "warmup": 500,
+      "gradient_max": 2.1971816877297545e-06,
+      "optimizer_success": true,
+      "hessian_min_eigen": 3.1250922918806507
+    }
+  },
+  "filters": [
+    {
+      "component": "N",
+      "q": 0.015,
+      "groups": 64,
+      "particles_per_group": 96,
+      "min_ess": 1.6141398074471012,
+      "resamples": 6885,
+      "state_window_days": 365,
+      "history": []
+    },
+    {
+      "component": "B_lenin",
+      "q": 0.015,
+      "groups": 64,
+      "particles_per_group": 96,
+      "min_ess": 22.244519341570435,
+      "resamples": 1015,
+      "state_window_days": 365,
+      "history": []
+    },
+    {
+      "component": "E_lenin",
+      "q": 0.015,
+      "groups": 64,
+      "particles_per_group": 96,
+      "min_ess": 6.424888526447956,
+      "resamples": 340,
+      "state_window_days": 365,
+      "history": []
+    },
+    {
+      "component": "B_stalin",
+      "q": 0.015,
+      "groups": 64,
+      "particles_per_group": 96,
+      "min_ess": 28.331427238034394,
+      "resamples": 1144,
+      "state_window_days": 365,
+      "history": []
+    },
+    {
+      "component": "E_stalin",
+      "q": 0.015,
+      "groups": 64,
+      "particles_per_group": 96,
+      "min_ess": 19.70213083658663,
+      "resamples": 465,
+      "state_window_days": 365,
+      "history": []
+    }
+  ]
+}

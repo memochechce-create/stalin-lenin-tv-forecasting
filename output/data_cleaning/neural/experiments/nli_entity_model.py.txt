@@ -1,0 +1,65 @@
+"""Target-context disambiguation using pretrained Russian BERT NLI weights."""
+import hashlib
+import json
+import os
+from pathlib import Path
+
+ROOT=Path(__file__).resolve().parents[1]
+MODELS={
+    'tiny':('cointegrated/rubert-tiny-bilingual-nli','3907306f5e5d65e281a524c536883b766c89ded2','rubert-tiny-nli'),
+    'base':('cointegrated/rubert-base-cased-nli-threeway','920cbb52ef830e94461bf141ec2119979b6049e2','rubert-base-nli')}
+
+
+def hypotheses(person):
+    surname={'lenin':'Ленин','stalin':'Сталин'}[person]
+    name={'lenin':'Владимир Ленин','stalin':'Иосиф Сталин'}[person]
+    return {
+      'historical_person':f'В этом фрагменте упоминается {name}, его жизнь, слова или действия.',
+      'named_object':f'В этом фрагменте {surname} — название улицы, площади, населённого пункта, учреждения или корабля.',
+      'commemoration':f'В этом фрагменте упоминается памятник, портрет или награда в честь {surname}а.',
+      'other_person':f'В этом фрагменте упоминается другой человек, а не {name}.',
+      'transcription_error':f'В этом фрагменте слово {surname} ошибочно распознано вместо другого слова.'}
+
+
+def context_text(m,window):
+    p=m['context_offset']; e=p+len(m['matched'])
+    if m['context'][p:e]!=m['matched']: raise ValueError('Bad target offset')
+    return ' '.join(m['context'][max(0,p-window):e+window].split())
+
+
+class NLIEntityModel:
+    def __init__(self,size='tiny',threads=4,window=140):
+        import torch
+        from transformers import AutoTokenizer,AutoModelForSequenceClassification
+        os.environ['HF_HUB_OFFLINE']='1';os.environ['TRANSFORMERS_OFFLINE']='1'
+        os.environ['TOKENIZERS_PARALLELISM']='false'
+        torch.set_num_threads(threads)
+        self.torch=torch;self.window=window
+        self.model_id,self.revision,directory=MODELS[size]
+        path=ROOT/'analysis/models'/directory
+        self.tokenizer=AutoTokenizer.from_pretrained(path,local_files_only=True)
+        self.model=AutoModelForSequenceClassification.from_pretrained(path,local_files_only=True).eval()
+        labels={str(v).lower():int(k) for k,v in self.model.config.id2label.items()}
+        if 'entailment' not in labels: raise ValueError('Entailment label is not declared')
+        self.entailment=labels['entailment']
+
+    def predict(self,mentions,batch_size=24):
+        pairs=[];keys=[]
+        for m in mentions:
+            h=hypotheses(m['person']);keys.append(list(h))
+            pairs.extend((context_text(m,self.window),v) for v in h.values())
+        entail=[]
+        with self.torch.inference_mode():
+            for start in range(0,len(pairs),batch_size):
+                batch=pairs[start:start+batch_size]
+                inputs=self.tokenizer([v[0] for v in batch],[v[1] for v in batch],padding=True,truncation='only_first',max_length=256,return_tensors='pt')
+                probabilities=self.model(**inputs).logits.softmax(-1)
+                entail.extend(probabilities[:,self.entailment].tolist())
+        results=[];offset=0
+        for m,names in zip(mentions,keys):
+            scores=dict(zip(names,entail[offset:offset+len(names)]));offset+=len(names)
+            ordered=sorted(scores,key=scores.get,reverse=True)
+            best,second=ordered[:2]
+            key=hashlib.sha256(json.dumps([self.model_id,self.revision,self.window,hypotheses(m['person']),context_text(m,self.window)],ensure_ascii=False).encode()).hexdigest()
+            results.append(dict(category=best,score=scores[best],margin=scores[best]-scores[second],scores=scores,input_key=key))
+        return results

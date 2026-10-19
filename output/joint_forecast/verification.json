@@ -1,0 +1,20 @@
+{
+  "status": "pass",
+  "checks": [
+    "Input and executable SHA-256 match manifest",
+    "Five models, two people, four channels, both targets, full 31-day horizon",
+    "All 30000 joint paths satisfy 0<=B<=N and B<=C; B=0 implies C=0",
+    "Month summaries are quantiles of summed paths, not sums of daily quantiles",
+    "Validation precedes test; model selection reproduced from validation only",
+    "21 nonoverlapping calendar test months; identical observed dates across models",
+    "Missing channel-days excluded from scoring; never replaced with zero",
+    "Every static fit passes rank split Rhat<1.01 and bulk/tail ESS>=400",
+    "Aggregate evaluation recomputed from individual forecast scores"
+  ],
+  "max_rhat": 1.0097665475460946,
+  "min_bulk_ess": 655.7438511985226,
+  "min_tail_ess": 416.04207695128366,
+  "static_component_fits": 290,
+  "scored_rows": 50260,
+  "selected_model": "M3"
+}

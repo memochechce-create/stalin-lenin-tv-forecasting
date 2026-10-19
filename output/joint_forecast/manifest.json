@@ -1,0 +1,42 @@
+{
+  "source_sha256": "bb18df725a91029b0116ca750b5e8398ad89c3d3d61f3e5ef32661b31cc04b63",
+  "code_sha256": {
+    "execute_forecast_notebook.py": "7ab9ba4c83058f163f1a108635607eec587676fe8feec3f86557487d6863df40",
+    "forecast_artifacts.py": "42c97c80eeea854460aab55ead2452acb0fca97b1ce58134bf4558d04d544e9b",
+    "run_joint_forecast.py": "7f4de7c31992d0c164cb4dc02780176e97dd040409a750e8b2dc8c3445b691c9",
+    "verify_forecast.py": "86e987e1f01066e621b699230658723f0c427e8595426f72a7031e211226df91",
+    "verify_joint_forecast.py": "ef99e0673aa09cf2041308d96381df9e30cd4b9450d50f775a71310c67542772",
+    "joint_count_models.py": "1392f640fd5be29a8f121de0740b5556aaa39f39ea871c1c0860f46d74ce1292"
+  },
+  "seed": 20261017,
+  "data_cutoff": "2026-10-02",
+  "forecast_start": "2026-10-03",
+  "forecast_end": "2026-11-02",
+  "retrospective_frozen_cutoff": true,
+  "validation": "2024-07 through 2024-12",
+  "test": "2025-01 through 2026-09",
+  "test_origins": 21,
+  "q": 0.015,
+  "selected_model": "M3",
+  "backtest_draws": 2048,
+  "final_draws": 30000,
+  "versions": {
+    "python": "3.13.7",
+    "numpy": "2.3.2",
+    "pandas": "2.3.2",
+    "scipy": "1.16.1",
+    "matplotlib": "3.11.2",
+    "arviz": "0.23.4"
+  },
+  "elapsed_seconds": 1275.1763330999966,
+  "inference": "exact static posterior MH; M4 conditional/cut state filters, not full joint Bayes",
+  "target": "provisional rule-selected surname contexts per MSK archive-start day",
+  "outputs_sha256": {
+    "forecast_daily.csv": "98b2dbc33fcc0039850659279f0732358e85117d966aa66acddb85acf0ccf96e",
+    "forecast_month.csv": "7487cd363c25b34d9c1750cdcce6e3321f4a0bbf2f4e8fff6aa9f7af7562b138",
+    "forecast_paths.npz": "e82c6c4c3505ca09a97499739dd121d55c1e713e12c3e907d446732859fb6861",
+    "forecast_paths_possible.npz": "2582816ae3950d8479b29266c44193ff299351ac0b7a8a931d9f7975a080bb19"
+  },
+  "serialization_note": "Dates serialized as fixed-width Unicode; all count-array SHA-256 preserved during metadata-only repair of first run.",
+  "rendering_note": "Monthly coverage added to conclusions; renderer and notebook executor updated after numerical results, with unchanged model/input/forecasts."
+}

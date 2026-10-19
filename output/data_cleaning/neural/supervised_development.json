@@ -1,0 +1,506 @@
+[
+  {
+    "mention_id": "RUSSIA1_20251026_140000_Vesti:lenin:15730",
+    "person": "lenin",
+    "matched": "Ленин",
+    "context": " для тебя решение, сразу всё\nпонятно, гигачат помогает\nсознание. дело большая премьера на канале\nРоссия, Ленин вообще ни\nк кому не прислушивается, вредный тип, никогда не знаешь, какая\nдикость вбридёт в его башку,\nна что он вам сдался этот Ленин, ну мы давно следим за ним, и я могу\nвас уверить, что Ленин очень приятельный опасный\nполитик, как англичане всё раньше нас узнают, я не\nпойму, вчера этот Ленин был не нужен\nникому, кто такой этот Ленин, вы знаете?\n\"кажется, он сумасшедший, очень убедительный, говорят в\nправде, Ленинское выступление в Таврическом\nнапечатано, мне нравится эта его феноменальн",
+    "context_offset": 300,
+    "reference_category": "historical_person",
+    "split": "development",
+    "annotation_method": "primary_agent_context_judgment_no_audio",
+    "evaluation_id": 0,
+    "baseline_rule_label": "person_likely",
+    "nonstandard_asr_form": false,
+    "prediction": {
+      "category": "historical_person",
+      "score": 0.9483552575111389,
+      "margin": 0.9113693125545979,
+      "scores": {
+        "historical_person": 0.9483552575111389,
+        "non_target_reference": 0.014658858068287373,
+        "commemoration": 0.03698594495654106
+      },
+      "input_key": "c04ec136cd547985298cbdb5f02168803b69c1b44fbf1becd96b241f76d2571b"
+    }
+  },
+  {
+    "mention_id": "RUSSIA24_20230406_173000_RIK_Rossiya_24:lenin:4420",
+    "person": "lenin",
+    "matched": "Ленин",
+    "context": "к для сбора стекла забросали полицейских пустыми бутылками. В ответ сотрудники полиции применили слезоточивый газ обороняет заведение. Оно считается одним из самых известных Парижа известно, что она создали пиканцам одеянии шагал. Э, как минимум 12 раз, Согласно данным историков. Там бывал Владимир Ленин ему посещали Троцкий Ахмат Маяковский а любил в нём отдыхать и Малевича В общем это действительно такой кусочек истории Франции и в том числе истории новейшей, потому что в апреле семнадцатого года и в ноль. Макрон, отправился свой выход. На второй тур президентских выборов. Сейчас этот ресторан вы",
+    "context_offset": 300,
+    "reference_category": "historical_person",
+    "split": "development",
+    "annotation_method": "primary_agent_context_judgment_no_audio",
+    "evaluation_id": 3,
+    "baseline_rule_label": "person_likely",
+    "nonstandard_asr_form": false,
+    "prediction": {
+      "category": "historical_person",
+      "score": 0.9425135254859924,
+      "margin": 0.8980951085686684,
+      "scores": {
+        "historical_person": 0.9425135254859924,
+        "non_target_reference": 0.013068006373941898,
+        "commemoration": 0.044418416917324066
+      },
+      "input_key": "c936d40a86c03c0fdaa8633d1eeac1a151a0505382f61f5ed10d4c7fe25a2258"
+    }
+  },
+  {
+    "mention_id": "RUSSIA24_20240122_010000_RIK_Rossiya_24:lenin:7846",
+    "person": "lenin",
+    "matched": "Ленина",
+    "context": " него, но конечно же, даже в этом смысле вспомнить Ленина, как который сказал о кино, я не помню, как карен, как кино блестящее, важнейшее из искусство, хотя правильно ты сказал, тогда ещё кино не было искусственение, мало то там было дальше добавленный и цирк того Ленина звали. так вот этому опыту Ленина лучше не нужно прикасаться вот такими руками и брезгливо оценивать его как человека которого с этой стороны он хорош с этой плохо согласен но есть нюанс то что вы рассказываете это уже не Ленин конечно это не сталин то о чём вы говорите. желание людей, а не принуждения, это большая разница, при при",
+    "context_offset": 300,
+    "reference_category": "historical_person",
+    "split": "development",
+    "annotation_method": "primary_agent_context_judgment_no_audio",
+    "evaluation_id": 6,
+    "baseline_rule_label": "person_likely",
+    "nonstandard_asr_form": false,
+    "prediction": {
+      "category": "historical_person",
+      "score": 0.9409939050674438,
+      "margin": 0.9070308841764927,
+      "scores": {
+        "historical_person": 0.9409939050674438,
+        "non_target_reference": 0.02504303678870201,
+        "commemoration": 0.03396302089095116
+      },
+      "input_key": "c8d0a04204480f4992f211e10bf3e38c135219a6bd6f425474436513e962a57a"
+    }
+  },
+  {
+    "mention_id": "RUSSIA1_20241219_120000_60_minut:lenin:25199",
+    "person": "lenin",
+    "matched": "Ленина",
+    "context": "ование, но нужно всегда предложить\nальтернативу более интересного, чем порносайт, вот\nтак, чтобы человек залез бы туда, открыл порносайт,\nну слушайте, это я уже видел, а мне, а мне\nхочется вот посмотреть что-то другое, чтобы захватывало\nчеловека, понимаете, вот то же самое\nкасается захоронения тела\nЛенина. ну когда-то, наверное, общество к\nэтому подойдёт, но сегодня, особенно сегодня в\nРоссии, мы не должны предпринимать ни одного шага,\nкоторый бы раскалывал наше общество, вот\nя из этого исхожу, но, но в целом в целом Илия,\nконечно, прав, я с ним, я его люблю\nи слушаю всегда, что он говорит, я знаю, ",
+    "context_offset": 300,
+    "reference_category": "historical_person",
+    "split": "development",
+    "annotation_method": "primary_agent_context_judgment_no_audio",
+    "evaluation_id": 9,
+    "baseline_rule_label": "person_likely",
+    "nonstandard_asr_form": false,
+    "prediction": {
+      "category": "historical_person",
+      "score": 0.938169538974762,
+      "margin": 0.9052980355918407,
+      "scores": {
+        "historical_person": 0.938169538974762,
+        "non_target_reference": 0.028959011659026146,
+        "commemoration": 0.03287150338292122
+      },
+      "input_key": "86c213da36348b93861e7e28e025b024ec114e99648ae9aa1c5b1fab18635273"
+    }
+  },
+  {
+    "mention_id": "NTV_20240407_033000_Tsentralnoe_televidenie:lenin:13925",
+    "person": "lenin",
+    "matched": "Ленина",
+    "context": "ыход? федерализация, федерализация, иначе мы будем постоянно это, ну на грани войны, поверьте, а 6 апреля, сегодня ровно 10 лет, поняв, что Киев их не услышит, протестующие займут здания администрации в Донецкой, Луганской и Харьковской областях. Многотысячные митинги, в том числе здесь, на площади Ленина в Донецке, приведут к тому, что переходное правительство Украины во главе с Турчиновым объявит о начале антитеррористической операции в глазах официального Киева террористами сразу станут сотни тысяч. Так в апреле четырнадцатого 10 лет назад. начнётся война, которая идёт до сих пор. Виктория Романю",
+    "context_offset": 300,
+    "reference_category": "named_object",
+    "split": "development",
+    "annotation_method": "primary_agent_context_judgment_no_audio",
+    "evaluation_id": 12,
+    "baseline_rule_label": "named_object",
+    "nonstandard_asr_form": false,
+    "prediction": {
+      "category": "non_target_reference",
+      "score": 0.8358959555625916,
+      "margin": 0.6865415275096893,
+      "scores": {
+        "historical_person": 0.14935442805290222,
+        "non_target_reference": 0.8358959555625916,
+        "commemoration": 0.014749564230442047
+      },
+      "input_key": "5decdfe47062fab9a71a704239dbd5e4627478da737a9d919f5bd5efde0b2895"
+    }
+  },
+  {
+    "mention_id": "1TV_20230421_070000_Zhit_zdorovo:lenin:15519",
+    "person": "lenin",
+    "matched": "Ленина",
+    "context": "ще конец света. Итак тульский пряник, Давайте прямо покажем, что это вот прямо конкретно отсюда вот это форма. И вот так похоже конкретно. Вот сделано увеличивается, когда запекается. Это понятно. Вот прямо в точности Да потрясающе, это правда, что в Туле есть памятник тульскому прянику на площади, Ленина тульский пряник памятник. Вы сделаете год. Это первое дата классического упоминания о тульском пряности со своим самоваром в тулуне ездить, да? Да ездит, Давайте теперь про состав Тульского пряника Итак В чём наше русская особенность И за что нам дали премию на знаменитый Всемирной выставке в Париж",
+    "context_offset": 300,
+    "reference_category": "named_object",
+    "split": "development",
+    "annotation_method": "primary_agent_context_judgment_no_audio",
+    "evaluation_id": 15,
+    "baseline_rule_label": "named_object",
+    "nonstandard_asr_form": false,
+    "prediction": {
+      "category": "commemoration",
+      "score": 0.9075866937637329,
+      "margin": 0.8481344915926456,
+      "scores": {
+        "historical_person": 0.03296106308698654,
+        "non_target_reference": 0.059452202171087265,
+        "commemoration": 0.9075866937637329
+      },
+      "input_key": "0bbee7a980250792d052e17d1880bca466164742a646d1db9bd0fa8cc04474ab"
+    }
+  },
+  {
+    "mention_id": "NTV_20250517_170000:lenin:17968",
+    "person": "lenin",
+    "matched": "Ленина",
+    "context": "идит на запрещённых веществах. Об этом Екатерина\nШаврина впервые рассказала 5 лет назад. Певица\nзаверила, зависимость давно в прошлом, но в феврале\n2023 Григория арестовали при попытке сбыта\nнаркотиков. Мы вместе с ней были в машине, когда ей позвонили, сказали.\nчто его задержали, писательница Лена Ленина вспоминает,\nШаврина потеряла дар речи, наркотики обнаружили в\nзагородном доме её сына, Григорий хранил их в морозилке, ему дали\nвозможность позвонить, он позвонил матери и для неё это был шок, что его задержали\nс с этим избытком, это первенец, это её любимый\nребёнок, с которым они прошли\nтакие стра",
+    "context_offset": 300,
+    "reference_category": "other_person",
+    "split": "development",
+    "annotation_method": "primary_agent_context_judgment_no_audio",
+    "evaluation_id": 18,
+    "baseline_rule_label": "other_person",
+    "nonstandard_asr_form": false,
+    "prediction": {
+      "category": "non_target_reference",
+      "score": 0.9062679409980774,
+      "margin": 0.8326111510396004,
+      "scores": {
+        "historical_person": 0.07365678995847702,
+        "non_target_reference": 0.9062679409980774,
+        "commemoration": 0.020075326785445213
+      },
+      "input_key": "c0dafa45381b7b5ef32992a499ea04c43b94ad153cccbc5aade9c91ed51987d2"
+    }
+  },
+  {
+    "mention_id": "NTV_20240323_100000_Osnovano_na_realnikh_sobitiyakh:lenin:31254",
+    "person": "lenin",
+    "matched": "Ленина",
+    "context": "а, которые посвящены, значит, Куосу и его руководителю, дальше отряду Зенита, отрядам Коска. На этих сценах отражены те, как раз преподаватели, те героические лица, которые фактически преподавали, руководили. Григорий Иванович Боярин, полковник, участник войны, вот имел ордена Красной звезды, орден Ленина, орден красного знамени награждён многими наградами в период Великой Отечественной войны, вот здесь они стоят на этой фотографии, вот на этой фотографии они стоят как раз-таки втроём вот слева. ещё и тем, что никогда прежде ни одной спецслужбе мира не удавалось решить задачу такого масштаба, настол",
+    "context_offset": 300,
+    "reference_category": "commemoration",
+    "split": "development",
+    "annotation_method": "primary_agent_context_judgment_no_audio",
+    "evaluation_id": 21,
+    "baseline_rule_label": "uncertain_reference",
+    "nonstandard_asr_form": false,
+    "prediction": {
+      "category": "commemoration",
+      "score": 0.910747766494751,
+      "margin": 0.8572079241275787,
+      "scores": {
+        "historical_person": 0.035712406039237976,
+        "non_target_reference": 0.05353984236717224,
+        "commemoration": 0.910747766494751
+      },
+      "input_key": "bf2f634f140e4cc440bc6bf33f6d9dd6560edb3f15729e2e9f85b6cc50a87b7f"
+    }
+  },
+  {
+    "mention_id": "RUSSIA24_20260906_220000_Vesti:lenin:2517",
+    "person": "lenin",
+    "matched": "Ленина",
+    "context": "ре по определению нет, они все одна большая\nдружная команда, после пройденных испытаний, проливной дождь на церемонии\nнаграждения, судя по этим кадрам, для всех участников\nоказался.\nЛидер КПРФ, Геннадий Зюганов в пятницу посетил Подмосковный\nПодольск, вместе с соратниками возложил цветы к памятнику Ленина\nвстретился с юными спортсменами из детской хоккейной школы. Там ему вручили\nпамятный подарок именную футболку с номером\n6767. Там же в Подольске лидер\nКПРФ заехал на один из ведущих хлебокомбинатов, где ему\nпоказали новое оборудование и\nассортимент.\nособое\nвнимание, по словам Леонида Слуцкого будет",
+    "context_offset": 300,
+    "reference_category": "commemoration",
+    "split": "development",
+    "annotation_method": "primary_agent_context_judgment_no_audio",
+    "evaluation_id": 24,
+    "baseline_rule_label": "uncertain_reference",
+    "nonstandard_asr_form": false,
+    "prediction": {
+      "category": "commemoration",
+      "score": 0.630622386932373,
+      "margin": 0.2915138006210327,
+      "scores": {
+        "historical_person": 0.030269108712673187,
+        "non_target_reference": 0.33910858631134033,
+        "commemoration": 0.630622386932373
+      },
+      "input_key": "06144b5c616e7de79c980dd0be9d9bfdf7301abc61b8be58c1bf471a653404a0"
+    }
+  },
+  {
+    "mention_id": "1TV_20250226_165000_Pust_govoryat:lenin:8182",
+    "person": "lenin",
+    "matched": "Ленином",
+    "context": "на говорит, что гречневую кашу\nлюбил.\nгремели вдруг я стала убирать по\nкроватью я нашла балетку такую, балетка\nбыла как чемоданчик, вот как доктор Эболит, и\nя помню, открыла эту этот чемодан, что а\nтам столько было денег, много пачек, а я\nмаме тогда звонила и говорила, мама, там все\nденьги, пачки с Ленином, для меня\nбыло это настолько девочки из периферии увидит столько, я\nговорю: там все пачки с Ленином, и я\nбыстренько их так закрыла, тут у меня началось, я\nэтот чемодан туда, я чемодан другой, кто-то, он мне сказал, к\nтелефону не подходи, к телефону не подходи, на\nзвонки никакие не отвечай, я не за ",
+    "context_offset": 300,
+    "reference_category": "commemoration",
+    "split": "development",
+    "annotation_method": "primary_agent_context_judgment_no_audio",
+    "evaluation_id": 27,
+    "baseline_rule_label": "uncertain_asr",
+    "nonstandard_asr_form": true,
+    "prediction": {
+      "category": "historical_person",
+      "score": 0.9330236911773682,
+      "margin": 0.8872248008847237,
+      "scores": {
+        "historical_person": 0.9330236911773682,
+        "non_target_reference": 0.02117741107940674,
+        "commemoration": 0.0457988902926445
+      },
+      "input_key": "aa5bcfb422b0ab31c8ed7625170df4e1e02b785e13b18268393356d0e7ff67d1"
+    }
+  },
+  {
+    "mention_id": "1TV_20260827_231000_Podkast.Lab:lenin:24165",
+    "person": "lenin",
+    "matched": "Ленином",
+    "context": "ь туда детей и чтобы не получилось так,\nкак она видела вот на заре своей революционной карьеры, чтобы дети не умирали от\nплохого присмотра, в буквальном смысле слова, не\nумирали, это всё делается, это...\nне\nзакончилось,\nреволюционной войны с Германией, но на этом\nеё участие в\nполитике и отношения с Ленином, несмотря на это, у неё продолжались, достаточно\nтёплые, Инеса Фёдоровна.\nона примыкает к нему, причём не просто примыкает к лидеру, здесь\nболее важно, она написала, по-моему, она написала брошюру, что такое\nрабочая оппозиция, программу рабочей оппозиция программу рабочей\nоппозиция, она один из иде",
+    "context_offset": 300,
+    "reference_category": "historical_person",
+    "split": "development",
+    "annotation_method": "primary_agent_context_judgment_no_audio",
+    "evaluation_id": 30,
+    "baseline_rule_label": "uncertain_asr",
+    "nonstandard_asr_form": true,
+    "prediction": {
+      "category": "historical_person",
+      "score": 0.9452793002128601,
+      "margin": 0.9139854721724987,
+      "scores": {
+        "historical_person": 0.9452793002128601,
+        "non_target_reference": 0.0234268419444561,
+        "commemoration": 0.031293828040361404
+      },
+      "input_key": "6ba64eb3fd1a91bdc7891a34d831a6aa1048692c44d3d7b5cd286829e7abdd0e"
+    }
+  },
+  {
+    "mention_id": "RUSSIA1_20230115_194000_Voskresnii_vecher_s_Vladimirom_Solovyovim:stalin:106549",
+    "person": "stalin",
+    "matched": "Сталину",
+    "context": "дела его реальное лицо увидела, что если Друг мы этой Победы не одержим, то придёт неоколониализм ещё более жёсткой форме, и оно этого не хочется совсем это большинство, Но для нас. Я считаю, что настало время. помните, вот в октябре, по-моему, сорок первого года было так называемое письмо Майского Сталину да, где он анализирует, А это ещё до перелома под Москвой это до перелома под Москвой был, Где первая фраза письма Майского Была примерно такая я могу какие-то слова перебрать, но суть вот какая. Теперь когда исход войны уже ясен? Необходимо перейти к планированию следующего мира. Это октябрь сорок",
+    "context_offset": 300,
+    "reference_category": "historical_person",
+    "split": "development",
+    "annotation_method": "primary_agent_context_judgment_no_audio",
+    "evaluation_id": 33,
+    "baseline_rule_label": "person_likely",
+    "nonstandard_asr_form": false,
+    "prediction": {
+      "category": "historical_person",
+      "score": 0.8298110365867615,
+      "margin": 0.6930329352617264,
+      "scores": {
+        "historical_person": 0.8298110365867615,
+        "non_target_reference": 0.1367781013250351,
+        "commemoration": 0.03341079503297806
+      },
+      "input_key": "1a1acf05bd1aee84ea19014848d5ecda4c2c1f15cbc5510767012cf717af5164"
+    }
+  },
+  {
+    "mention_id": "RUSSIA24_20250420_113000_RIK_Rossiya_24:stalin:13731",
+    "person": "stalin",
+    "matched": "Сталин",
+    "context": "то такой\nЛукбег? Нет, но они знают, что такое\nКоран. Они оукаются Кораном и\nобъединяются они именно в проводился конкурс,\nфестиваль чтецов Коран. Мы что-нибудь\nзнаем подобное, касаясь нашего\nправославного христианства. Неужели нам нужно дойти до\nтой точки, как в 1941 году, когда\nобращаясь к народу, Сталин сказал не только товарищи,\nграждане. ещё обратился, как обращается священник к своей\nпастве во время проповеди, братья и\nсестры,сти,\nграждане, братья и\nсёстры, Ленин, как никто понимал объединительную силу\nрелигии, именно поэтому объявил религию опиумом\nдля народа, опиумом, что это такое,\nопиум, об",
+    "context_offset": 300,
+    "reference_category": "historical_person",
+    "split": "development",
+    "annotation_method": "primary_agent_context_judgment_no_audio",
+    "evaluation_id": 36,
+    "baseline_rule_label": "person_likely",
+    "nonstandard_asr_form": false,
+    "prediction": {
+      "category": "historical_person",
+      "score": 0.8813859820365906,
+      "margin": 0.7877365872263908,
+      "scores": {
+        "historical_person": 0.8813859820365906,
+        "non_target_reference": 0.09364939481019974,
+        "commemoration": 0.024964623153209686
+      },
+      "input_key": "28f27cc77a6280144cf76c576ae0ef4d09b30dbd006361c3f2c6b6585f227f3c"
+    }
+  },
+  {
+    "mention_id": "NTV_20230509_004000_Altar_Pobedi:stalin:26401",
+    "person": "stalin",
+    "matched": "Сталин",
+    "context": "лись по домам. Ну а вечером гуляла Вся Москва в Кремле в георгиевском зале на банкет собрали начальство суран Симонян с товарищами музыкантами из сводного оркестра играл и на этом торжественном мероприятии и собственными ушами. Слышал знаменитый тост, который произнёс во время праздничного застолья Сталин Ну я видел как э-э выпил за русский народ. А это даст, а целая речка, которая растянулась на полчаса, помимо прочего Сталин сказал, Я поднимаю бокал за Советский народ и особенно за Народ, который в иные дни в сорок первом и сорок втором году, когда у нас были серьёзные испытания мог бы сказать, чт",
+    "context_offset": 300,
+    "reference_category": "historical_person",
+    "split": "development",
+    "annotation_method": "primary_agent_context_judgment_no_audio",
+    "evaluation_id": 39,
+    "baseline_rule_label": "person_likely",
+    "nonstandard_asr_form": false,
+    "prediction": {
+      "category": "historical_person",
+      "score": 0.721589982509613,
+      "margin": 0.4748867452144623,
+      "scores": {
+        "historical_person": 0.721589982509613,
+        "non_target_reference": 0.24670323729515076,
+        "commemoration": 0.03170671686530113
+      },
+      "input_key": "ef42bc6a309984a7efcf42809173f2f4c37284350ef10e16ad03f47880e64e19"
+    }
+  },
+  {
+    "mention_id": "NTV_20240502_145000_DNK:stalin:6586",
+    "person": "stalin",
+    "matched": "Сталина",
+    "context": "я есть кто-то ещё, с которым можно встретиться, допустим, выговориться, потому что братья и сёстра, это такой класс, я знаю, просто у меня есть друзья, у которых есть сестра, брат, они друг другу могут даже ночью позвонить, но это класс, анастасия, их мать на... В студии Наталья и Сталина Данилова. Сталина, расскажите, как вы узнали, что у вашей мамы должны быть старшие дети? Нам об этом рассказывала двоюродная сестра, это получается племянница нашего папы. Она рассказывала, что во время молодости у мамы были двое детей, а... с мальчик и девочка, ну вот мы оттуда узнали, фамилия, я так понимаю, что м",
+    "context_offset": 300,
+    "reference_category": "other_person",
+    "split": "development",
+    "annotation_method": "primary_agent_context_judgment_no_audio",
+    "evaluation_id": 42,
+    "baseline_rule_label": "person_likely",
+    "nonstandard_asr_form": false,
+    "prediction": {
+      "category": "historical_person",
+      "score": 0.895910382270813,
+      "margin": 0.8233531266450882,
+      "scores": {
+        "historical_person": 0.895910382270813,
+        "non_target_reference": 0.07255725562572479,
+        "commemoration": 0.03153231367468834
+      },
+      "input_key": "e6f8209edd755e9eb696117adccceb28512c08f231ee268a192473035d501e09"
+    }
+  },
+  {
+    "mention_id": "RUSSIA24_20250115_120000_RIK_Rossiya_24:stalin:2930",
+    "person": "stalin",
+    "matched": "Сталина",
+    "context": "одитель медного порошка, важнейший для\nавиа и мотор строительной\nпромышленности, о значение своей продукции для\nфронта. является дополнительным ударом по\nврагу. Центром\nавтомобилестроения в города войны стал город Мяас,\nЧелябинской области, куда была эвакуирована. часть\nмосковского автозавода имени Сталина. На её основе\nв тяжелейших условиях военного времени был запущен новый\nмиасский автозавод. И 20 июля сорок\nчетвёртого года отправлен на фронт первая партия\nавтомобильно достоен носить звание города трудовой доблести,\nэто Ишимбай.\nБашкарататастан. Предприятие города давали более\n25% всей нефти, добы",
+    "context_offset": 300,
+    "reference_category": "named_object",
+    "split": "development",
+    "annotation_method": "primary_agent_context_judgment_no_audio",
+    "evaluation_id": 45,
+    "baseline_rule_label": "named_object",
+    "nonstandard_asr_form": false,
+    "prediction": {
+      "category": "non_target_reference",
+      "score": 0.8428986072540283,
+      "margin": 0.7000091373920441,
+      "scores": {
+        "historical_person": 0.14288946986198425,
+        "non_target_reference": 0.8428986072540283,
+        "commemoration": 0.014211893081665039
+      },
+      "input_key": "f67c9c04b65890aaaddfae17db3c86048ce5a3ad1cbac49f4e67add8ddb5ec66"
+    }
+  },
+  {
+    "mention_id": "1TV_20250512_130500_Muzhskoe__Zhenskoe:stalin:5994",
+    "person": "stalin",
+    "matched": "Сталина",
+    "context": "одного конца коридора до другого, вас не обдаст\nкипятком, если вы не провалитесь, на вас не упадёт потолок,\nзначит вы прошли квест, вот так мы живём, а\nкакого года постройки ваш дом, вообще расскажите историю\nдома, наш дом 1900.\nпятьдесят шестого года постройки, это\nведомственное жильё завода имени\nСталина, который был эвакурован в Великую Отечественную\nвойну, и этот дом строили для\nзаводчан. Ну дайте догадаюсь, пока этот дом был на\nбалансе у завода, за ним следили, ухаживали, всё\nбыло хорошо, завод закрылся, дом ушёл на баланс\nгорода и до свидания, да, всё правильно, но у вас же там не такая\nпростая",
+    "context_offset": 300,
+    "reference_category": "named_object",
+    "split": "development",
+    "annotation_method": "primary_agent_context_judgment_no_audio",
+    "evaluation_id": 48,
+    "baseline_rule_label": "named_object",
+    "nonstandard_asr_form": false,
+    "prediction": {
+      "category": "non_target_reference",
+      "score": 0.963220477104187,
+      "margin": 0.9431003835052252,
+      "scores": {
+        "historical_person": 0.02012009359896183,
+        "non_target_reference": 0.963220477104187,
+        "commemoration": 0.01665947213768959
+      },
+      "input_key": "88d0df0cf900c491bbc24e7e54bfde87edeb6a9b22cc37e5b7b4c4317f7771ba"
+    }
+  },
+  {
+    "mention_id": "RUSSIA24_20251005_090000_RIK_Rossiya_24:stalin:4167",
+    "person": "stalin",
+    "matched": "Сталин",
+    "context": "твуйте, в студии Эдуард\nПетров.\nСмотрите сегодня.\nнаходится главная тюрьма страны для особо опасных\nпреступников, которую в народе называют Владимирский\nцентрал, в разные годы, а учреждению 2 с лишним\nвека его сидельцами были известные люди, Михаил\nФрунзе, Ледия Русланова, Павел Судоплатов,\nВасилий Сталин, среди нынешних обитателей тюрьмы таких\nлюдей нет, у большинства современных сидельцев, руки\nполокоть в крови, кого считают самым известным.\nВладимирского централа, почему этой тюрьме\nпосвятил свою песню тверской музыкант Михаил\nКруг, и как осуждённые белыми нитками\nшиют футбольные\nмечи. Мы взялись",
+    "context_offset": 300,
+    "reference_category": "other_person",
+    "split": "development",
+    "annotation_method": "primary_agent_context_judgment_no_audio",
+    "evaluation_id": 51,
+    "baseline_rule_label": "other_person",
+    "nonstandard_asr_form": false,
+    "prediction": {
+      "category": "non_target_reference",
+      "score": 0.9462884068489075,
+      "margin": 0.905024453997612,
+      "scores": {
+        "historical_person": 0.04126395285129547,
+        "non_target_reference": 0.9462884068489075,
+        "commemoration": 0.012447595596313477
+      },
+      "input_key": "51098b6c94747512a3ca09cb0654ead1673afd6659fc4a088b0f8ecc6d18a36e"
+    }
+  },
+  {
+    "mention_id": "RUSSIA24_20250115_003000_RIK_Rossiya_24:stalin:9257",
+    "person": "stalin",
+    "matched": "Сталина",
+    "context": "ет гораздо больше. О чём и речь? Это значит, мы будем\nиспользовать, опять-таки, это моё личное мнение, но исходя из военной\nдоктрины, мы же можем использовать экзистенциальной угрозы нашему\nгосударству. Америка хочет нас поставить перед. так засенциальным\nвыбором Гренландия не поможет, пролив имени Сталина,\nГренландию оставляет в покое, но там не так много будет людей, чтобы это\nиграло роль, они единственное, понимаете, на мой взгляд, они до сих пор не верят, что\nмы на это пойдём, вот это их проблема, тогда они плохо знают нашу верховную\nглавного да и завершение ещё тут у меня один тезис\nзафиксир, зн",
+    "context_offset": 300,
+    "reference_category": "named_object",
+    "split": "development",
+    "annotation_method": "primary_agent_context_judgment_no_audio",
+    "evaluation_id": 54,
+    "baseline_rule_label": "uncertain_reference",
+    "nonstandard_asr_form": false,
+    "prediction": {
+      "category": "historical_person",
+      "score": 0.9454616904258728,
+      "margin": 0.9127183295786381,
+      "scores": {
+        "historical_person": 0.9454616904258728,
+        "non_target_reference": 0.021794980391860008,
+        "commemoration": 0.032743360847234726
+      },
+      "input_key": "d3eae18a6a5c505ac1cd731c51f9d3ed3edcb792cc4729485982ac347da10581"
+    }
+  },
+  {
+    "mention_id": "RUSSIA1_20250530_123000:stalin:6386",
+    "person": "stalin",
+    "matched": "Сталину",
+    "context": "еф\nсо Сталином. В статье отмечают, что власти\nРоссии частично возрождают наследие советского\nлидера, чтобы переосмыслить историю России как\nчереду славных триумфов.\nЧто здесь не так? Американские журналисты даже\nпосчитали, выяснилось, что в этом веке в\nРоссии были открыты как минимум\n108 памятников Сталину, причём\nпосле начала украинского конфликта, памятники\nстали появляться всё чаще. Отдельно\nописывают монумент в освобождённом\nМелитополе. Там бюз Сталина открыли.\nСпустились\nметро и выяснили, что большинство\nв\nмосковское\nграждан России о ужас, относится к\nСталину, как минимум, с\nуважением.\nВ России ",
+    "context_offset": 300,
+    "reference_category": "commemoration",
+    "split": "development",
+    "annotation_method": "primary_agent_context_judgment_no_audio",
+    "evaluation_id": 57,
+    "baseline_rule_label": "uncertain_reference",
+    "nonstandard_asr_form": false,
+    "prediction": {
+      "category": "commemoration",
+      "score": 0.8288064002990723,
+      "margin": 0.7088103294372559,
+      "scores": {
+        "historical_person": 0.1199960708618164,
+        "non_target_reference": 0.05119751766324043,
+        "commemoration": 0.8288064002990723
+      },
+      "input_key": "fe9f63eab1efa8b73b0a28c475a19ba0bb562bc68beed09f4af9f987363f65d9"
+    }
+  },
+  {
+    "mention_id": "NTV_20250717_160000_Segodnya:stalin:11731",
+    "person": "stalin",
+    "matched": "Сталином",
+    "context": "А. У Британии не было таких аргументов, как у СССР со\nсвоими войсками в Берлине, не было и такой бомбы, и не только\nинформационный, как у США, о чём расскажет мой коллега,\nАлексей Веселовский. дамской конференции Гарри\nТруман всего 3 месяца отработал на посту президента США, то есть по\nсравнению со Сталином и Черчилем, он был абсолютным новичком во\nвнешней политике, но 16 июля за день до встречи в\nГермании, США проводит первые успешные испытания атомной\nбомбы впервые в мировой истории, это, конечно, предало\nТрума на уверенности. Уже после первой встречи со Сталином в подздаме\nТруман запишет в дневнике",
+    "context_offset": 300,
+    "reference_category": "historical_person",
+    "split": "development",
+    "annotation_method": "primary_agent_context_judgment_no_audio",
+    "evaluation_id": 60,
+    "baseline_rule_label": "uncertain_asr",
+    "nonstandard_asr_form": true,
+    "prediction": {
+      "category": "historical_person",
+      "score": 0.9221269488334656,
+      "margin": 0.8707329109311104,
+      "scores": {
+        "historical_person": 0.9221269488334656,
+        "non_target_reference": 0.051394037902355194,
+        "commemoration": 0.026479046791791916
+      },
+      "input_key": "1b6b192085ce54f1ea261aa40ad04a1c24dfaf6b49cd464f458d84da032ceccf"
+    }
+  }
+]
