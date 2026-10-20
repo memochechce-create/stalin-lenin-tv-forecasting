@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="940.608pt" height="472.968pt" viewBox="0 0 940.608 472.968" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 472.968
+L 940.608 472.968
+L 940.608 0
+L 0 0
+z
+" style="fill: #fcfbf8"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 43.322112 161.73504
+L 897.285888 161.73504
+Q 908.400384 161.73504 908.400384 153.75168
+L 908.400384 92.54592
+Q 908.400384 84.56256 897.285888 84.56256
+L 43.322112 84.56256
+Q 32.207616 84.56256 32.207616 92.54592
+L 32.207616 153.75168
+Q 32.207616 161.73504 43.322112 161.73504
+z
+" clip-path="url(#p8653db67d7)" style="fill: #fcfbf8; stroke: #243c45; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 43.322112 341.36064
+L 285.988608 341.36064
+Q 297.103104 341.36064 297.103104 333.37728
+L 297.103104 212.29632
+Q 297.103104 204.31296 285.988608 204.31296
+L 43.322112 204.31296
+Q 32.207616 204.31296 32.207616 212.29632
+L 32.207616 333.37728
+Q 32.207616 341.36064 43.322112 341.36064
+z
+" clip-path="url(#p8653db67d7)" style="fill: #f1f2ef; stroke: #748188; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 348.970752 341.36064
+L 591.637248 341.36064
+Q 602.751744 341.36064 602.751744 333.37728
+L 602.751744 212.29632
+Q 602.751744 204.31296 591.637248 204.31296
+L 348.970752 204.31296
+Q 337.856256 204.31296 337.856256 212.29632
+L 337.856256 333.37728
+Q 337.856256 341.36064 348.970752 341.36064
+z
+" clip-path="url(#p8653db67d7)" style="fill: #e6f0ef; stroke: #277978; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 654.619392 341.36064
+L 897.285888 341.36064
+Q 908.400384 341.36064 908.400384 333.37728
+L 908.400384 212.29632
+Q 908.400384 204.31296 897.285888 204.31296
+L 654.619392 204.31296
+Q 643.504896 204.31296 643.504896 212.29632
+L 643.504896 333.37728
+Q 643.504896 341.36064 654.619392 341.36064
+z
+" clip-path="url(#p8653db67d7)" style="fill: #f5ece7; stroke: #b46a48; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 43.322112 461.11104
+L 897.285888 461.11104
+Q 908.400384 461.11104 908.400384 453.12768
+L 908.400384 378.61632
+Q 908.400384 370.63296 897.285888 370.63296
+L 43.322112 370.63296
+Q 32.207616 370.63296 32.207616 378.61632
+L 32.207616 453.12768
+Q 32.207616 461.11104 43.322112 461.11104
+z
+" clip-path="url(#p8653db67d7)" style="fill: #fcfbf8; stroke: #a5afb1; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'DejaVu Sans', Arial, sans-serif; text-anchor: start; fill: #243c45" x="48.87936" y="107.327346" transform="rotate(-0 48.87936 107.327346)">Линейная часть каждой компоненты (на шкале логарифма или логита)</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans', Arial, sans-serif; text-anchor: start; fill: #243c45" x="48.87936" y="142.955305" transform="rotate(-0 48.87936 142.955305)">канал  +  тренд  +  месяц года  +  день недели  +  годовщины  +  общий уровень месяца u</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'DejaVu Sans', Arial, sans-serif; text-anchor: start; fill: #243c45" x="48.87936" y="227.021145" transform="rotate(-0 48.87936 227.021145)">N - все записи</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans', Arial, sans-serif; fill: #243c45" transform="translate(48.87936 261.675548)">архивные передачи канала</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans', Arial, sans-serif; fill: #243c45" transform="translate(48.87936 276.260275)">за день</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans', Arial, sans-serif; fill: #243c45" transform="translate(48.87936 288.5034)"/>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans', Arial, sans-serif; fill: #243c45" transform="translate(48.87936 305.455705)">отрицательное биномиальное</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 164.65536 165.069967
+Q 164.65536 182.02644 164.65536 197.529468
+" style="fill: none; stroke: #243c45; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 167.45536 191.929468
+L 164.65536 197.529468
+L 161.85536 191.929468
+z
+" style="fill: #243c45; stroke: #243c45; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'DejaVu Sans', Arial, sans-serif; text-anchor: start; fill: #243c45" x="354.528" y="227.021145" transform="rotate(-0 354.528 227.021145)">B - записи с упоминанием</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans', Arial, sans-serif; fill: #243c45" transform="translate(354.528 263.544377)">сколько из N записей</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans', Arial, sans-serif; fill: #243c45" transform="translate(354.528 276.728595)">упоминают фигуру</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans', Arial, sans-serif; fill: #243c45" transform="translate(354.528 288.5034)"/>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans', Arial, sans-serif; fill: #243c45" transform="translate(354.528 306.376017)">бета-биномиальное</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 470.304 165.069967
+Q 470.304 182.02644 470.304 197.529468
+" style="fill: none; stroke: #243c45; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 473.104 191.929468
+L 470.304 197.529468
+L 467.504 191.929468
+z
+" style="fill: #243c45; stroke: #243c45; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'DejaVu Sans', Arial, sans-serif; text-anchor: start; fill: #243c45" x="660.17664" y="227.021145" transform="rotate(-0 660.17664 227.021145)">C - все упоминания</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans', Arial, sans-serif; fill: #243c45" transform="translate(660.17664 262.540939)">C = B + E, где E - повторные</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans', Arial, sans-serif; fill: #243c45" transform="translate(660.17664 275.928517)">упоминания в тех же записях</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans', Arial, sans-serif; fill: #243c45" transform="translate(660.17664 288.5034)"/>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans', Arial, sans-serif; fill: #243c45" transform="translate(660.17664 305.455705)">отрицательное биномиальное</text>
+   </g>
+   <g id="patch_9">
+    <path d="M 775.95264 165.069967
+Q 775.95264 182.02644 775.95264 197.529468
+" style="fill: none; stroke: #243c45; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 778.75264 191.929468
+L 775.95264 197.529468
+L 773.15264 191.929468
+z
+" style="fill: #243c45; stroke: #243c45; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 300.958988 272.8368
+Q 317.482516 272.8368 332.5526 272.8368
+" style="fill: none; stroke: #243c45; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 326.9526 270.0368
+L 332.5526 272.8368
+L 326.9526 275.6368
+z
+" style="fill: #243c45; stroke: #243c45; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 606.607627 272.8368
+Q 623.131156 272.8368 638.20124 272.8368
+" style="fill: none; stroke: #243c45; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 632.60124 270.0368
+L 638.20124 272.8368
+L 632.60124 275.6368
+z
+" style="fill: #243c45; stroke: #243c45; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 11.5px; font-family: 'DejaVu Sans', Arial, sans-serif; text-anchor: start; fill: #243c45" x="48.87936" y="393.503762" transform="rotate(-0 48.87936 393.503762)">Что даёт такая схема</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans', Arial, sans-serif; fill: #243c45" transform="translate(48.87936 429.025705)">•  Траектории согласованы: B ≤ N, B ≤ C, нет упоминаний без записи (L2).</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans', Arial, sans-serif; fill: #243c45" transform="translate(48.87936 443.275705)">•  Месячные эффекты сжимаются к общему уровню, сила сжатия оценивается по данным; уровень месяца u общий для каналов и дней (L4).</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans', Arial, sans-serif; fill: #243c45" transform="translate(48.87936 457.525705)">•  Апостериорное распределение - HMC (L3); уже наблюдённые 1-2 октября сдвигают уровень октября (L5).</text>
+   </g>
+  </g>
+  <g id="text_11">
+   <text style="font-size: 22px; font-family: 'DejaVu Sans', Arial, sans-serif; text-anchor: start; fill: #243c45" x="50.616" y="23.914844" transform="rotate(-0 50.616 23.914844)">Как устроена модель</text>
+  </g>
+  <g id="text_12">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans', Arial, sans-serif; text-anchor: start; fill: #748188" x="50.616" y="38.088" transform="rotate(-0 50.616 38.088)">Для каждого канала и дня, отдельно для Ленина и Сталина</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p8653db67d7">
+   <rect x="7.2" y="66.6" width="926.208" height="399.168"/>
+  </clipPath>
+ </defs>
+</svg>

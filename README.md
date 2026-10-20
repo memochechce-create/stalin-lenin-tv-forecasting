@@ -1,60 +1,37 @@
-# Lenin and Stalin on Russian television: daily probabilistic forecasts
+# Lenin and Stalin on Russian television
 
-Course project by **Купча Софья and Пальцева Ксения**. Two people, four channels, two targets: surname mentions and archive records with at least one mention.
+Course project by **Sofya Kupcha, Ksenia Paltseva and Timofey Mingalev**.
 
-## Results and report
+## Final deliverables
 
-- Five-slide presentation: [PowerPoint](output/presentation/lenin_stalin_forecast.pptx) and [PDF](output/presentation/lenin_stalin_forecast.pdf), with speaker notes timed for an eight-minute talk.
+- [Final seven-slide English presentation](output/presentation/lenin_stalin_forecast_final.pptx). Slide 5 shows daily forecasts by channel; slide 6 shows the monthly-total forecast; slide 7 shows daily totals across all four channels for both targets.
+- [Final M3HR model, evaluation and numerical results](output/forecast_v2/README.md).
+- [English figures](output/figures/en), [Russian figures and reproduction guide](output/figures/README.md).
+- [Monthly forecasts](output/forecast_v2/forecast_month_v2.csv), [event probabilities](output/forecast_v2/forecast_events_v2.csv), [selection record and test metrics](output/forecast_v2/decisions.json).
+- [Corrected daily input](data/cleaned/tv_daily_targets.csv.gz) and [data preparation](output/data_cleaning/README.md).
 
-- [Visual forecast report](output/joint_forecast/forecast_report.html): self-contained HTML, minimal SVG charts, daily and monthly forecasts, historical evaluation and sensitivity.
-- [Final project notebook](output/joint_forecast/final_project.ipynb): explained calculations, model equations, temporal validation, diagnostics and course-method mapping.
-- [Methodology, reproduction and file guide](output/joint_forecast/README.md).
-- [Daily predictions](output/joint_forecast/forecast_daily.csv), [monthly predictions](output/joint_forecast/forecast_month.csv), [evaluation by series](output/joint_forecast/evaluation_by_series.csv).
-- [Original proposal](output/proposal/forecasting_proposal.pdf) and [editable source](output/proposal/forecasting_proposal.tex).
+The targets are daily counts of person mentions and archive records with at least one mention: two people, four channels, two targets, sixteen series. The forecast horizon is **3 October - 2 November 2026**, with information through **2 October 2026**. Missing archive days are excluded, not treated as zeros.
 
-The information cutoff is **2 October 2026**. The proposed 31-day forecast runs **3 October–2 November 2026**. This is a frozen-cutoff retrospective forecast; no observations after the cutoff enter fitting or selection.
+## Model and evaluation
 
-## Reproduce from the terminal
+The final model is **M3HR**: the calendar-and-trend model M3 with an estimated shrinkage scale for month-of-year effects and a calendar-month random effect shared across channels and days within each component. The model simulates archive volume N, records with mentions B conditional on N, and all mentions C=B+E. Joint paths respect the count constraints. Inference uses Hamiltonian Monte Carlo with four chains, R-hat below 1.01, bulk/tail ESS at least 400 and no divergences.
 
-Use Python 3.12/3.13 from the repository root:
+M1 is the constant-rate baseline; M2 adds overdispersion; M3 adds calendar effects and trend; M4 adds dynamic random-walk levels. The retained [baseline implementation and results](output/joint_forecast/README.md) are dependencies and comparison material, not an alternative final deliverable.
+
+The original test has 21 expanding-window months, January 2025 - September 2026. In the colleague's within-run comparison, final-model daily scaled CRPS is 0.453729 versus M3's 0.453936; monthly scaled CRPS is 0.190925 versus 0.196740. Monthly 80%/95% coverage is 82.9%/94.3%. The final structure was selected after inspection of the test, so incremental gains remain exploratory; see the saved selection record.
+
+## Reproduce
 
 ```powershell
-python -m pip install -r requirements-forecast.txt
-python analysis/run_joint_forecast.py --jobs 3
-python analysis/execute_forecast_notebook.py
+python -m pip install -r requirements-forecast-v2.txt
+$env:OPENBLAS_NUM_THREADS='1'
+python analysis/run_forecast_v2.py --phase final --models M3HR
+python analysis/project_figures.py --lang en --output-dir output/figures/en --figures daily_total_mentions,daily_total_broadcasts,daily_mentions,daily_broadcasts,calendar_effects
 python -m unittest discover -s tests -v
 ```
 
-The workflow fits all models, performs chronological backtesting, produces joint predictive trajectories, validates the results and builds the figures, HTML and notebook. `--jobs 1` runs sequentially. `--rebuild` ignores fitted-posterior caches. The full computation takes time on CPU; valid cached fits are reused automatically. No API credentials or network are needed for forecasting.
+To reconstruct the entire backtest, follow [the final-model guide](output/forecast_v2/README.md). This is a longer computation. Rebuildable posterior/test caches are not versioned. The small final predictive trajectory file is included so the final daily figures can be regenerated without refitting. `analysis/refresh_final_presentation.mjs` refreshes the embedded figures while preserving the final deck's layout and order.
 
-## Models and evaluation
+All figures are produced by project code. Four-channel intervals are computed after summing channels within each joint draw. Long dash characters are normalized before saving. Final refit means differ from the colleague's supplied monthly summary by less than 0.075%; [the refit comparison](output/forecast_v2/final_refit_comparison.json) records the small sampling/platform differences.
 
-All forecasts respect **N → B|N → C=B+E|B**: total archive records, records with a mention, then additional mentions in those records. Future N is forecast rather than observed. N is shared by both people; every simulated path satisfies 0≤B≤N, B≤C and B=0⇒C=0.
-
-1. M1: conjugate constant-rate Poisson/Binomial baseline.
-2. M2: negative-binomial and beta-binomial overdispersion, exact static-posterior Metropolis–Hastings.
-3. M3: M2 with trend, partially pooled channel/calendar effects and explicit special-date indicators.
-4. M4: M3 with random-walk levels and conditional particle filters; an explicitly modular/cut approximation.
-5. An equal-weight linear pool of complete trajectories, following the forecast-aggregation lecture.
-
-Calendar/channel prior scales are fixed and disclosed. Four MH chains are required to pass rank-normalized split Rhat<1.01 and bulk/tail ESS≥400. The Bayesian computation is checked separately from model adequacy.
-
-Tuning and model selection use July–December 2024 only. The outer expanding-window backtest covers 21 nonoverlapping calendar months, January 2025–September 2026. Evaluation includes RMSE, CRPS, predictive coverage/width, randomized PIT, horizon-specific scores, block bootstrap uncertainty and origin-block DM tests with Holm correction. Monthly predictive intervals use sums of trajectories, never sums of daily quantiles. Missing days are excluded, not replaced by zero.
-
-## Data and interpretation
-
-The model input is [the corrected daily table](data/cleaned/tv_daily_targets.csv.gz). [Data preparation and checks](output/data_cleaning/README.md) describe coverage, source verification, surname forms, contextual rules, duplicates and repairs. Rebuild it with:
-
-```powershell
-python analysis/prepare_clean_data.py
-```
-
-Source: [GDELT](https://gdeltproject.org/) television transcripts and archived metadata, January 2023–October 2026. The source collection workflow is in `data_collection/`. Original transcripts/SQLite and rebuildable caches remain local and are ignored by Git. The supplied compressed daily data are sufficient to reproduce forecasting without Google Cloud access.
-
-Counts include all archived programmes, advertisements and true rebroadcasts. A day is defined by the archive record's MSK start date. Contextual surname labels remain provisional; independent human precision/recall is not established. A separate expanded-context sensitivity forecast is supplied. Archive volume and ASR/text length can affect counts: the forecasts support statements about the measured archive series, not causal claims about political direction.
-
-The cancelled neural-disambiguation experiment is documented [here](output/data_cleaning/neural/EXPERIMENT_NOTES.md); it does not affect the active rules or forecasts.
-
-## Historical pilot
-
-`output/stalin_russia1/`, `analysis/stalin_models.py` and the old `requirements.txt` reproduce an earlier Stalin/Russia 1 pilot on unfiltered candidates and the former coverage definition. These files are retained for provenance. Use the new `joint_forecast` results and `requirements-forecast.txt` for the final project.
+Raw television transcripts and collection databases remain local and ignored. Collection, cleaning, source audit and corrected-input validation are retained for provenance. Older pilot presentations and the cancelled neural experiment have been removed from the current tree; Git history retains the previously committed versions.

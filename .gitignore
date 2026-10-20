@@ -16,6 +16,9 @@
 # Rebuildable static posterior caches and temporary layout previews.
 /output/joint_forecast/cache/
 /output/joint_forecast/preview/
+/output/joint_forecast_v2/cache/
+/output/joint_forecast_v2/chronos_cache/
+/tmp/
 /output/presentation_build/
 /.chart-data-*/
 /analysis/jupyter/
@@ -43,3 +46,18 @@ credentials*.json
 *service-account*.json
 *.pem
 *.key
+
+# Rebuildable colleague-model posterior and predictive caches
+/output/forecast_v2/cache/
+/output/forecast_v2/final_paths_*.npz
+/output/forecast_v2/*rebuild.log
+
+# Superseded experiment outputs are not part of the final project.
+/output/joint_forecast_v2/
+/data/v2/
+/analysis/*joint_v2*.py
+/analysis/benchmark_chronos_v2.py
+/tests/test_joint_v2.py
+/output/forecast_v2/label_mapping.json
+/output/forecast_v2/unmatched_labels.json
+/output/forecast_v2/PLOT_WORK_STATE.md

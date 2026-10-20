@@ -1,0 +1,127 @@
+{
+  "N": {
+    "max_rhat": 1.0049580791500805,
+    "min_bulk_ess": 1561.5798184947316,
+    "min_tail_ess": 1607.7381353218163,
+    "sampler": "HMC, Laplace-whitened",
+    "n": 5334,
+    "dim": 85,
+    "acceptance": [
+      0.81,
+      0.81,
+      0.77,
+      0.805
+    ],
+    "step_size": [
+      0.4744783862173272,
+      0.49391954616584477,
+      0.5059082901815948,
+      0.4764033959522528
+    ],
+    "divergences": 0,
+    "draws_per_chain": 1000,
+    "gradient_max": 1.603710497732891e-10,
+    "hessian_min_eigen": 7.396134182914359,
+    "component": "N"
+  },
+  "B_lenin": {
+    "max_rhat": 1.0088002438044468,
+    "min_bulk_ess": 928.6793508346443,
+    "min_tail_ess": 1316.0997586886685,
+    "sampler": "HMC, Laplace-whitened",
+    "n": 5334,
+    "dim": 85,
+    "acceptance": [
+      0.8115,
+      0.807,
+      0.8125,
+      0.7735
+    ],
+    "step_size": [
+      0.5602648136993204,
+      0.5547537334556306,
+      0.5340180865894787,
+      0.5898003495363673
+    ],
+    "divergences": 0,
+    "draws_per_chain": 2000,
+    "gradient_max": 1.6876246388686234e-05,
+    "hessian_min_eigen": 5.6266715496935324,
+    "component": "B_lenin"
+  },
+  "E_lenin": {
+    "max_rhat": 1.008996467984057,
+    "min_bulk_ess": 433.6896538437586,
+    "min_tail_ess": 1007.6291420447095,
+    "sampler": "HMC, Laplace-whitened",
+    "n": 1898,
+    "dim": 85,
+    "acceptance": [
+      0.8,
+      0.795,
+      0.79075,
+      0.794625
+    ],
+    "step_size": [
+      0.5778414641330744,
+      0.578030075166303,
+      0.5838948482106392,
+      0.5625633629589996
+    ],
+    "divergences": 0,
+    "draws_per_chain": 8000,
+    "gradient_max": 6.837087461186719e-07,
+    "hessian_min_eigen": 2.395668485444768,
+    "component": "E_lenin"
+  },
+  "B_stalin": {
+    "max_rhat": 1.0044818479826307,
+    "min_bulk_ess": 1324.0200789359735,
+    "min_tail_ess": 2154.2437909049227,
+    "sampler": "HMC, Laplace-whitened",
+    "n": 5334,
+    "dim": 85,
+    "acceptance": [
+      0.7935,
+      0.8105,
+      0.7975,
+      0.821
+    ],
+    "step_size": [
+      0.5573292866021137,
+      0.5401843659954095,
+      0.5408820540621385,
+      0.5390006018189634
+    ],
+    "divergences": 0,
+    "draws_per_chain": 2000,
+    "gradient_max": 1.5521513375138518e-06,
+    "hessian_min_eigen": 6.481029595152628,
+    "component": "B_stalin"
+  },
+  "E_stalin": {
+    "max_rhat": 1.0032363254657308,
+    "min_bulk_ess": 1576.6001971767553,
+    "min_tail_ess": 2842.630596887908,
+    "sampler": "HMC, Laplace-whitened",
+    "n": 2709,
+    "dim": 85,
+    "acceptance": [
+      0.795,
+      0.810875,
+      0.796875,
+      0.799625
+    ],
+    "step_size": [
+      0.5872965560007716,
+      0.5677170047273612,
+      0.5801006748087534,
+      0.5829676873413475
+    ],
+    "divergences": 0,
+    "draws_per_chain": 8000,
+    "gradient_max": 3.655754889919649e-07,
+    "hessian_min_eigen": 2.953107545240299,
+    "component": "E_stalin"
+  }
+}

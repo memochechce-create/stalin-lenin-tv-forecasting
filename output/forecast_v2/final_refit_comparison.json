@@ -1,0 +1,58 @@
+[
+  {
+    "target": "lenin_mentions",
+    "old_mean": 104.60346666666666,
+    "rebuilt_mean": 104.54506666666667,
+    "relative_difference_pct": -0.05582988964035751,
+    "old80": [
+      63.0,
+      152.0
+    ],
+    "rebuilt80": [
+      63.0,
+      152.0
+    ]
+  },
+  {
+    "target": "stalin_mentions",
+    "old_mean": 211.15023333333332,
+    "rebuilt_mean": 211.30716666666666,
+    "relative_difference_pct": 0.07432306886707707,
+    "old80": [
+      133.0,
+      300.0
+    ],
+    "rebuilt80": [
+      134.0,
+      300.0
+    ]
+  },
+  {
+    "target": "lenin_broadcasts",
+    "old_mean": 59.8818,
+    "rebuilt_mean": 59.87643333333333,
+    "relative_difference_pct": -0.00896209978101803,
+    "old80": [
+      41.0,
+      81.0
+    ],
+    "rebuilt80": [
+      41.0,
+      81.0
+    ]
+  },
+  {
+    "target": "stalin_broadcasts",
+    "old_mean": 93.85213333333331,
+    "rebuilt_mean": 93.84793333333333,
+    "relative_difference_pct": -0.004475124699687694,
+    "old80": [
+      67.0,
+      123.0
+    ],
+    "rebuilt80": [
+      67.0,
+      123.0
+    ]
+  }
+]
