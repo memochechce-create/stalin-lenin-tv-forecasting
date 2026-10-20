@@ -4,7 +4,7 @@ Course project by **Sofya Kupcha, Ksenia Paltseva and Timofey Mingalev**.
 
 ## Final deliverables
 
-- [Final seven-slide English presentation](output/presentation/lenin_stalin_forecast_final.pptx). Slide 5 shows daily forecasts by channel; slide 6 shows the monthly-total forecast; slide 7 shows daily totals across all four channels for both targets.
+- [Final seven-slide English presentation](output/presentation/lenin_stalin_forecast_final.pptx) ([PDF preview](output/presentation/lenin_stalin_forecast_final.pdf)). Slide 5 shows daily forecasts by channel; slide 6 shows the monthly-total forecast; slide 7 shows daily totals across all four channels for both targets.
 - [Final M3HR model, evaluation and numerical results](output/forecast_v2/README.md).
 - [English figures](output/figures/en), [Russian figures and reproduction guide](output/figures/README.md).
 - [Monthly forecasts](output/forecast_v2/forecast_month_v2.csv), [event probabilities](output/forecast_v2/forecast_events_v2.csv), [selection record and test metrics](output/forecast_v2/decisions.json).
